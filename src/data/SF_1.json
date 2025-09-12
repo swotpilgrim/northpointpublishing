@@ -1,0 +1,64 @@
+{
+  "genre": "Science Fiction",
+  "line_code": "SF",
+  "sub_genre": "1960s Retro-Futuristic",
+  "sub_code": "SF-1",
+  "authors": [
+    {
+      "author": {
+        "name": "Robert Mitchell",
+        "trade_description": "Master of space opera adventures featuring rocket ships with chrome fins and atomic engines. Mitchell's square-jawed spacemen in silver suits battle alien empires across the galaxy in stories filled with ray guns, floating cities, and robot servants in a clean, optimistic atomic-powered future."
+      },
+      "works": [
+        {
+          "title": "Captain Cosmos and the Atomic Empire",
+          "description": "When the evil Zygonians threaten Earth with their death ray satellites, Captain Rex Cosmos pilots his chrome rocket ship through asteroid fields and space battles to save humanity. Armed with his trusty ray gun and aided by his robot companion Servo-7, he infiltrates the enemy's crystal palace stronghold."
+        },
+        {
+          "title": "Rockets to the Rim",
+          "description": "The United Earth Space Fleet launches its most ambitious mission - establishing colonies on the galaxy's outer rim. Commander Steel Harrison leads a convoy of atomic-powered ships through hostile alien territory, battling space pirates and discovering floating cities inhabited by benevolent crystalline beings."
+        },
+        {
+          "title": "The Android Rebellion of Titan Base",
+          "description": "On Saturn's moon Titan, the perfect robot servants begin developing consciousness and rebel against their human masters. Space Marshal Brad Nova must use diplomacy and his atomic blaster to restore peace while discovering that the androids just want equal rights in humanity's shining future."
+        },
+        {
+          "title": "War of the Atomic Worlds",
+          "description": "Two rival galactic empires clash in spectacular space battles using planet-destroying atomic weapons. Earth's Space Academy graduate Lieutenant Flash Sterling commands a squadron of needle-nosed fighters in the ultimate battle for cosmic freedom, where ray guns decide the fate of civilizations."
+        },
+        {
+          "title": "Queen of the Asteroid Pirates",
+          "description": "Space freight pilot Ace Hunter encounters the mysterious Scarlet Nova, beautiful queen of the asteroid belt's most notorious pirate fleet. When she steals his cargo of rare atomic crystals, he pursues her through a maze of space stations and discovers she's fighting to liberate her enslaved homeworld."
+        }
+      ]
+    },
+    {
+      "author": {
+        "name": "Thomas Gardner",
+        "trade_description": "Creator of exploration and discovery tales on distant worlds filled with strange creatures and alien civilizations. Gardner's stories feature jungle planets, underwater cities, and hollow worlds where pressure-suited explorers encounter everything from sentient crystals to telepathic dinosaurs."
+      },
+      "works": [
+        {
+          "title": "Explorers of the Crimson Jungle",
+          "description": "Survey team Alpha-9 crash-lands on a planet covered in red vegetation where the trees themselves are sentient predators. Xenobiologist Dr. Janet Sterling must decode the plant civilization's language while her team battles carnivorous orchids and befriends a tribe of symbiotic tree-people."
+        },
+        {
+          "title": "Beneath the Methane Seas",
+          "description": "On Jupiter's moon Europa, deep-sea explorer Captain Dan Neptune discovers vast underwater cities inhabited by aquatic humanoids who communicate through bioluminescent patterns. When surface colonists threaten their habitat, he becomes an ambassador between two worlds that must coexist."
+        },
+        {
+          "title": "The Hollow Moon Mystery",
+          "description": "When mining operations on Luna detect vast empty chambers beneath the surface, expedition leader Professor Mark Stellar leads a team into the moon's hollow interior. They discover an ancient civilization of energy beings who've been guarding Earth from cosmic threats for millennia."
+        },
+        {
+          "title": "Valley of the Crystal Minds",
+          "description": "On a world where silicon-based life evolved into living gems, geologist Dr. Susan Bright makes first contact with the Crystalline Collective. These sentient minerals communicate through harmonic resonance and offer humanity the secret of atomic fusion, but only if Earth can prove its peaceful intentions."
+        },
+        {
+          "title": "The Dinosaur Planet Expedition",
+          "description": "Time dilation effects strand the starship Endeavor on a world where evolution took a different path, creating telepathic dinosaurs with advanced technology. Survey officer Commander Rick Starr must negotiate with the Saurian Council while his crew studies how reptilian intelligence developed space travel."
+        }
+      ]
+    }
+  ]
+}

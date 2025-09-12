@@ -1,0 +1,139 @@
+---
+export interface Props {
+	title: string;
+	description?: string;
+}
+
+const { title, description = "North Point Publishing - Intelligent Genre Fiction Since 1975" } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header-content">
+					<div class="logo">
+						<a href="/">
+							<img src="/northpointpublishing/images/icons/north_point_logo.png" alt="North Point Publishing" class="logo-image" />
+							<span class="logo-text">North Point Publishing</span>
+						</a>
+					</div>
+					<p class="tagline">Intelligent Genre Fiction Since 1975</p>
+				</div>
+			</div>
+		</header>
+		<main>
+			<slot />
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<p>&copy; 1975-2024 North Point Publishing. Preserving classic genre fiction traditions.</p>
+			</div>
+		</footer>
+	</body>
+</html>
+
+<style>
+	html {
+		font-family: 'Georgia', serif;
+	}
+
+	body {
+		margin: 0;
+		padding: 0;
+		background-color: #ffffff;
+		color: #000000;
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 20px;
+	}
+
+	.header {
+		background: #000000;
+		padding: 1rem 0;
+		border-bottom: 2px solid #000000;
+	}
+
+	.header-content {
+		text-align: center;
+	}
+
+	.logo a {
+		color: #ffffff;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.5rem;
+	}
+
+	.logo-image {
+		height: 40px;
+		width: auto;
+		filter: invert(1);
+	}
+
+	.logo-text {
+		font-size: 1.8rem;
+		font-weight: bold;
+		font-family: 'Times New Roman', serif;
+	}
+
+	.tagline {
+		color: #cccccc;
+		font-style: italic;
+		margin: 0.25rem 0 0 0;
+		font-size: 0.9rem;
+	}
+
+	main {
+		flex: 1;
+		padding: 1rem 0;
+	}
+
+	.footer {
+		background-color: #000000;
+		padding: 1rem 0;
+		text-align: center;
+		color: #cccccc;
+		border-top: 1px solid #333333;
+	}
+
+	@media (max-width: 768px) {
+		.logo a {
+			flex-direction: column;
+			gap: 0.25rem;
+		}
+
+		.logo-image {
+			height: 30px;
+		}
+		
+		.logo-text {
+			font-size: 1.5rem;
+		}
+		
+		.tagline {
+			font-size: 0.8rem;
+		}
+		
+		.container {
+			padding: 0 15px;
+		}
+	}
+</style>

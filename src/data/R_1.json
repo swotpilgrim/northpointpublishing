@@ -1,0 +1,120 @@
+{
+  "genre": "Romance",
+  "line_code": "R",
+  "sub_genre": "1950s Teen Romance", 
+  "sub_code": "R-1",
+  "authors": [
+    {
+      "author": {
+        "name": "Betty Williams",
+        "trade_description": "Master of wholesome high school romances featuring cheerleaders, football players, and class presidents navigating first love. Williams' stories revolve around school dances, going steady, and innocent relationship milestones, with conflicts involving jealous rivals, parental disapproval, and choosing between popularity and sincerity."
+      },
+      "works": [
+        {
+          "title": "Homecoming Queen's Heart",
+          "description": "Popular cheerleader Susie Thompson must choose between Brad, the handsome football captain everyone expects her to date, and shy Tommy from the science club who truly understands her dreams of becoming a teacher. The homecoming dance becomes the night she discovers that real love isn't always what others expect."
+        },
+        {
+          "title": "Going Steady at Riverside High",
+          "description": "When new girl Janet arrives at Riverside High, she catches the eye of class president Danny Mitchell, but his steady girlfriend Linda isn't giving up without a fight. Through sock hops and study dates, Janet learns that winning a boy's letter jacket requires more than just good looks and popularity."
+        },
+        {
+          "title": "The Soda Shop Sweetheart",
+          "description": "Working after school at her father's soda fountain, sweet Mary Lou discovers that the cutest boys don't always make the best boyfriends. When she starts tutoring quiet bookworm Pete in chemistry, their study sessions at the malt shop turn into something sweeter than banana splits."
+        },
+        {
+          "title": "Promise Ring Romance",
+          "description": "Senior year sweethearts Bobby and Diane plan their future together, but when Bobby gets a scholarship to a college across the country, their promise ring feels more like a burden than a blessing. Prom night becomes a crossroads where they must choose between young love and growing up."
+        },
+        {
+          "title": "Varsity Letter Love",
+          "description": "Tomboy athlete Sally strikes out with boys until the new basketball coach's son shows her that being smart and athletic makes her special, not strange. Through school spirit weeks and championship games, she learns that the right boy will love her for exactly who she is."
+        }
+      ]
+    },
+    {
+      "author": {
+        "name": "Carol Henderson",
+        "trade_description": "Specialist in summer romance stories where teenage girls meet mysterious boys at beach resorts, summer camps, and family vacations. Henderson's plots focus on vacation flings that feel like true love, long-distance relationships, and the bittersweet nature of temporary romance that often ends with promises to write letters."
+      },
+      "works": [
+        {
+          "title": "Summer Love at Sunset Beach",
+          "description": "Sixteen-year-old Karen's family vacation to a seaside resort becomes magical when she meets Jim, a lifeguard with dreams of becoming a marine biologist. Through moonlit beach walks and bonfire dances, their summer romance blooms, but September looms with the heartbreak of returning to different states."
+        },
+        {
+          "title": "Camp Counselor Crush",
+          "description": "Debbie's summer job as a junior counselor at Camp Wildwood gets complicated when she falls for Mike, the handsome head counselor from the boys' camp across the lake. Between talent shows and campfire songs, their romance grows, but summer's end means returning to schools hundreds of miles apart."
+        },
+        {
+          "title": "The Boy from Catalina Island",
+          "description": "During her family's California vacation, shy Patricia meets Roberto, a local boy who shows her the island's hidden treasures. Their whirlwind romance of sailing lessons and sunset picnics makes her question everything about her small-town life back home in Ohio."
+        },
+        {
+          "title": "Letters from Lake George",
+          "description": "When city girl Melody spends the summer at her aunt's lake cottage, she falls for David, a local boy who works at the marina. Their romance survives his wealthy girlfriend's jealousy and her parents' disapproval, but can it survive the distance when she returns to Manhattan?"
+        },
+        {
+          "title": "Boardwalk Romance",
+          "description": "At the Jersey Shore, wholesome Midwestern girl Ruth discovers a world of carnival rides, saltwater taffy, and Tony, a charming boardwalk worker with dreams bigger than his small seaside town. Their summer of first love teaches her that home is where the heart finds happiness."
+        }
+      ]
+    },
+    {
+      "author": {
+        "name": "Donna Mitchell",
+        "trade_description": "Creator of stories about teenage girls torn between two very different suitors - usually the safe, parent-approved boy versus the exciting rebel with a motorcycle. Mitchell's heroines struggle with reputation versus passion, often learning that the bad boy has a sensitive side while the good boy might be controlling."
+      },
+      "works": [
+        {
+          "title": "Leather Jacket Love",
+          "description": "Good girl Angela is expected to date clean-cut honor student Richard, but she's drawn to mysterious biker Jake who quotes poetry and dreams of becoming an artist. When she discovers Jake's troubled past and Richard's jealous nature, she must choose between safety and following her heart."
+        },
+        {
+          "title": "The Rebel's Secret",
+          "description": "Preacher's daughter Emily is forbidden from dating motorcycle-riding Danny, but when she tutors him in English, she discovers his tough exterior hides a brilliant mind and a heart wounded by family tragedy. Their forbidden romance challenges everything she's been taught about judging others."
+        },
+        {
+          "title": "Two Hearts, One Choice",
+          "description": "Popular Nancy finds herself caught between football hero Chuck, who everyone expects her to marry, and sensitive artist Michael, who sees her true dreams of college and independence. The spring formal becomes the night she must decide between conforming to expectations or following her own path."
+        },
+        {
+          "title": "Bad Boy, Good Heart",
+          "description": "When troubled transfer student Rick enrolls at Madison High, straight-A student Jennifer volunteers to help him catch up on schoolwork. Behind his rebellious attitude, she discovers a boy fighting to overcome his reputation and prove he's worthy of a good girl's love."
+        },
+        {
+          "title": "Dangerous Love",
+          "description": "Bank president's daughter Claire is supposed to date the mayor's son, but she's fascinated by Johnny, the mechanic's son who works on motorcycles and dreams of racing professionally. Their romance across social lines teaches her that love doesn't recognize class boundaries."
+        }
+      ]
+    },
+    {
+      "author": {
+        "name": "Nancy Parker",
+        "trade_description": "Specialist in social class conflicts where teenage girls from modest backgrounds fall for wealthy boys from the other side of town. Parker's stories explore themes of fitting in with different social circles, overcoming family prejudices, and proving that love conquers economic differences through country club settings and debutante balls."
+      },
+      "works": [
+        {
+          "title": "The Debutante's Dilemma",
+          "description": "Working-class Rose gets a scholarship to exclusive Fairfield Academy where she falls for wealthy classmate William. When his family's debutante ball approaches, she must prove that breeding isn't about money but about character, while learning to navigate a world of country clubs and cotillions."
+        },
+        {
+          "title": "Love Across the Tracks",
+          "description": "When railroad worker's daughter Lisa catches the eye of banker's son Paul at the town's summer festival, their romance faces opposition from both families. Through secret meetings and stolen moments, they prove that true love can bridge the gap between the right and wrong sides of the tracks."
+        },
+        {
+          "title": "The Country Club Prince",
+          "description": "Waitress Helen works summer parties at the exclusive Hillcrest Country Club where she meets tennis champion Robert. Despite his mother's horrified objections and the sneers of wealthy debutantes, their romance blooms over clandestine tennis lessons and garden party dances."
+        },
+        {
+          "title": "Millionaire's Daughter",
+          "description": "When factory foreman's son Tom wins a scholarship to prep school, he falls for classmate Victoria, whose father owns the factory where his dad works. Their love story navigates the treacherous waters of class differences, family loyalty, and proving that the heart recognizes no social barriers."
+        },
+        {
+          "title": "The Society Girl's Secret",
+          "description": "Wealthy heiress Barbara rebels against her parents' choice of husband by falling for Joe, the chauffeur's son who works at her father's estate. Their forbidden romance unfolds through stolen moments in the garden maze and secret letters, proving that love is the greatest inheritance of all."
+        }
+      ]
+    }
+  ]
+}

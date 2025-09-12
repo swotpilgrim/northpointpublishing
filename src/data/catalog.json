@@ -1,0 +1,137 @@
+{
+  "publisher": {
+    "name": "North Point Publishing",
+    "founded": "1975",
+    "mission": "Preserving classic genre fiction traditions"
+  },
+  "genres": [
+    {
+      "name": "Horror",
+      "code": "H",
+      "sub_genres": [
+        {
+          "name": "1950s B-Movie Horror",
+          "code": "H-1"
+        },
+        {
+          "name": "Cosmic Horror",
+          "code": "H-2"
+        }
+      ]
+    },
+    {
+      "name": "Science Fiction",
+      "code": "SF",
+      "sub_genres": [
+        {
+          "name": "Space Opera",
+          "code": "SF-1"
+        },
+        {
+          "name": "Atomic Age Sci-Fi",
+          "code": "SF-2"
+        }
+      ]
+    }
+  ],
+  "authors": [
+    {
+      "id": "rex-maddox",
+      "name": "Rex 'Buzz' Maddox",
+      "bio": "Master of atomic-age monster terror and creature features from the golden age of pulp horror.",
+      "specialty": "Atomic-age creature features"
+    },
+    {
+      "id": "stella-vortex",
+      "name": "Stella Vortex",
+      "bio": "Pioneering female voice in space opera, known for her galactic adventures and alien civilizations.",
+      "specialty": "Space opera adventures"
+    },
+    {
+      "id": "frank-cosmos",
+      "name": "Frank Cosmos",
+      "bio": "Visionary writer of cosmic horror tales that explore the unknown depths of space and sanity.",
+      "specialty": "Cosmic horror"
+    }
+  ],
+  "books": [
+    {
+      "id": "atomic-ant-colony",
+      "title": "The Atomic Ant Colony",
+      "author_id": "rex-maddox",
+      "genre_code": "H",
+      "sub_genre_code": "H-1",
+      "description": "When atomic testing goes wrong in the Nevada desert, giant ants emerge from underground colonies to terrorize nearby towns. A thrilling tale of science gone mad!",
+      "publication_year": "1978",
+      "page_count": 184,
+      "isbn": "978-0-123456-78-9",
+      "cover_image": "/images/covers/atomic-ant-colony.jpg",
+      "price": "$2.95"
+    },
+    {
+      "id": "terror-from-space",
+      "title": "Terror from Space",
+      "author_id": "rex-maddox",
+      "genre_code": "H",
+      "sub_genre_code": "H-1",
+      "description": "A mysterious meteor crash brings otherworldly horrors to a small American town. Can the locals survive the night?",
+      "publication_year": "1979",
+      "page_count": 156,
+      "isbn": "978-0-123456-79-6",
+      "cover_image": "/images/covers/terror-from-space.jpg",
+      "price": "$2.95"
+    },
+    {
+      "id": "galactic-empress",
+      "title": "The Galactic Empress",
+      "author_id": "stella-vortex",
+      "genre_code": "SF",
+      "sub_genre_code": "SF-1",
+      "description": "Princess Zara must reclaim her throne from the evil Galactic Federation in this sweeping space opera adventure.",
+      "publication_year": "1976",
+      "page_count": 245,
+      "isbn": "978-0-123456-80-2",
+      "cover_image": "/images/covers/galactic-empress.jpg",
+      "price": "$3.25"
+    },
+    {
+      "id": "void-whispers",
+      "title": "Whispers from the Void",
+      "author_id": "frank-cosmos",
+      "genre_code": "H",
+      "sub_genre_code": "H-2",
+      "description": "Dr. Marcus Reed's experiments with interdimensional communication unleash unspeakable horrors from beyond space and time.",
+      "publication_year": "1977",
+      "page_count": 198,
+      "isbn": "978-0-123456-81-9",
+      "cover_image": "/images/covers/void-whispers.jpg",
+      "price": "$2.95"
+    },
+    {
+      "id": "robot-rebellion",
+      "title": "The Robot Rebellion",
+      "author_id": "stella-vortex",
+      "genre_code": "SF",
+      "sub_genre_code": "SF-2",
+      "description": "In the year 2050, humanity's robot servants turn against their creators in a battle for freedom and survival.",
+      "publication_year": "1980",
+      "page_count": 167,
+      "isbn": "978-0-123456-82-6",
+      "cover_image": "/images/covers/robot-rebellion.jpg",
+      "price": "$3.50"
+    },
+    {
+      "id": "swamp-creature",
+      "title": "Creature from Devil's Swamp",
+      "author_id": "rex-maddox",
+      "genre_code": "H",
+      "sub_genre_code": "H-1",
+      "description": "A prehistoric monster awakens in the Louisiana bayou, threatening a small fishing community.",
+      "publication_year": "1975",
+      "page_count": 142,
+      "isbn": "978-0-123456-83-3",
+      "cover_image": "/images/covers/swamp-creature.jpg",
+      "price": "$2.75"
+    }
+  ]
+}

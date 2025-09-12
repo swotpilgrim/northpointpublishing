@@ -1,0 +1,64 @@
+{
+  "genre": "Romance",
+  "line_code": "R",
+  "sub_genre": "YA Supernatural Teen Drama",
+  "sub_code": "R-2",
+  "authors": [
+    {
+      "author": {
+        "name": "Jessica Moonworth",
+        "trade_description": "Master of vampire romance where teenage girls discover they're destined to be with centuries-old supernatural beings. Moonworth blends high school drama with ancient prophecies, featuring brooding love interests who struggle between their dark nature and protective instincts, with romance central and supernatural politics providing backdrop tension."
+      },
+      "works": [
+        {
+          "title": "Eternal Love at Ravenswood Academy",
+          "description": "Sixteen-year-old Sarah enrolls at the exclusive Ravenswood boarding school where she meets mysterious senior Adrian, whose pale beauty and old-fashioned mannerisms hide a centuries-old secret. When she discovers he's a vampire bound by ancient prophecy to protect her bloodline, their forbidden romance faces both supernatural enemies and teenage rivalry."
+        },
+        {
+          "title": "The Vampire's Chosen Bride",
+          "description": "Ordinary high school student Rebecca inherits her grandmother's antique locket, only to discover it marks her as the destined mate of vampire prince Damien. As dark forces seek to prevent their union, she must navigate both prom committee drama and otherworldly assassination attempts while falling for her immortal protector."
+        },
+        {
+          "title": "Midnight Promises",
+          "description": "When new girl Luna arrives in the small town of Shadowbrook, she's immediately drawn to enigmatic classmate Raphael, whose family has guarded supernatural secrets for generations. Their romance blooms through moonlit cemetery walks and ancient rituals, but loving a vampire means choosing between mortality and eternal darkness."
+        },
+        {
+          "title": "Blood Moon Rising",
+          "description": "Cheerleader Jessica's perfect life crumbles when she discovers her boyfriend Marcus is a vampire hunter and her mysterious lab partner Lucien is his target. Caught between duty and desire, she must choose sides in an ancient war while her heart is torn between the boy who represents safety and the immortal who offers forever."
+        },
+        {
+          "title": "The Crimson Covenant",
+          "description": "On her eighteenth birthday, honor student Melody learns she's the last descendant of a powerful witch bloodline destined to unite with vampire lord Sebastian to prevent supernatural apocalypse. Their arranged supernatural marriage becomes a passionate romance as they battle both ancient enemies and modern teenage drama."
+        }
+      ]
+    },
+    {
+      "author": {
+        "name": "Morgan Blackthorne",
+        "trade_description": "Creator of witch academy stories where teenage girls with newly awakened magical powers attend supernatural boarding schools. Blackthorne's plots involve magical training, coven politics, and dark secrets about family bloodlines, blending coming-of-age themes with spell-casting adventures and forbidden magical knowledge."
+      },
+      "works": [
+        {
+          "title": "Spellbound at Mystic Heights",
+          "description": "When fifteen-year-old Cassandra's magic manifests during a chemistry experiment, she's whisked away to Mystic Heights Academy where young witches learn to control their powers. Between potion classes and magical duels, she uncovers a conspiracy within the faculty involving her mother's mysterious disappearance years ago."
+        },
+        {
+          "title": "The Thirteenth Coven",
+          "description": "New student Raven discovers that Thornwick Academy's honor society is actually a secret coven training the next generation of witches. As she learns to cast spells and brew enchantments, she realizes her rare shadow magic makes her a target for dark forces seeking to corrupt the ancient sisterhood."
+        },
+        {
+          "title": "Academy of Ancient Arts",
+          "description": "Orphaned Willow receives a mysterious invitation to attend Elderwood Academy, where she learns her deceased parents were powerful mages. While mastering telekinesis and divination, she discovers the school sits on a supernatural nexus that ancient evils are trying to claim for their own dark purposes."
+        },
+        {
+          "title": "The Midnight Sisterhood",
+          "description": "At the exclusive Salem Institute, scholarship student Ember must prove herself worthy of joining the elite Midnight Sisterhood while hiding her family's shameful history of dark magic. Through magical tournaments and forbidden romance with her enigmatic instructor, she learns that power corrupts even the purest intentions."
+        },
+        {
+          "title": "Witching Hour Secrets",
+          "description": "Transfer student Iris arrives at Crescent Moon Academy to find the school divided between light and dark magic practitioners. As she develops her rare ability to see through magical illusions, she uncovers a plot to steal students' powers and must unite the rival factions to prevent supernatural catastrophe."
+        }
+      ]
+    }
+  ]
+}
