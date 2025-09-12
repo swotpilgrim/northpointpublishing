@@ -6,9 +6,9 @@ import H_3 from '../data/H_3.json' assert { type: 'json' };
 import R_1 from '../data/R_1.json' assert { type: 'json' };
 import R_2 from '../data/R_2.json' assert { type: 'json' };
 import SF_1 from '../data/SF_1.json' assert { type: 'json' };
-// S_1 is empty file, so we skip it
+import S_1 from '../data/S_1.json' assert { type: 'json' };
 
-const genreFiles = [A_1, H_1, H_2, H_3, R_1, R_2, SF_1];
+const genreFiles = [A_1, H_1, H_2, H_3, R_1, R_2, SF_1, S_1];
 
 function createSlug(text) {
   return text
