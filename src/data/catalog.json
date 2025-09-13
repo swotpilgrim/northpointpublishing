@@ -11,7 +11,7 @@
       "sub_genres": [
         {
           "name": "1950s B-Movie Horror",
-<<<<<<< HEAD
+
           "code": "H-1",
           "imprint": "Atomic Screen",
           "imprint_code": "AS",
@@ -23,13 +23,13 @@
           "imprint": "Night Chapel",
           "imprint_code": "NC",
           "spine_code": "NP-NC"
-=======
+
           "code": "H-1"
         },
         {
           "name": "Cosmic Horror",
           "code": "H-2"
->>>>>>> 677d524ded813847ee6f985983aef85c014e32c7
+
         }
       ]
     },
@@ -39,7 +39,7 @@
       "sub_genres": [
         {
           "name": "Space Opera",
-<<<<<<< HEAD
+
           "code": "SF-1",
           "imprint": "StarLark",
           "imprint_code": "SL",
@@ -77,13 +77,13 @@
           "imprint": "Blue Ribbon",
           "imprint_code": "BR",
           "spine_code": "NP-BR"
-=======
+
           "code": "SF-1"
         },
         {
           "name": "Atomic Age Sci-Fi",
           "code": "SF-2"
->>>>>>> 677d524ded813847ee6f985983aef85c014e32c7
+
         }
       ]
     }
@@ -106,15 +106,15 @@
       "name": "Frank Cosmos",
       "bio": "Visionary writer of cosmic horror tales that explore the unknown depths of space and sanity.",
       "specialty": "Cosmic horror"
-<<<<<<< HEAD
+
     },
     {
       "id": "jake-murphy",
       "name": "Jake 'Rattlesnake' Murphy",
       "bio": "Master of violent revenge stories featuring anti-heroes who settle scores with extreme prejudice.",
       "specialty": "Grindhouse revenge tales"
-=======
->>>>>>> 677d524ded813847ee6f985983aef85c014e32c7
+
+
     }
   ],
   "books": [
@@ -124,12 +124,12 @@
       "author_id": "rex-maddox",
       "genre_code": "H",
       "sub_genre_code": "H-1",
-<<<<<<< HEAD
+
       "imprint": "Atomic Screen",
       "imprint_code": "AS",
       "spine_code": "NP-AS-001",
-=======
->>>>>>> 677d524ded813847ee6f985983aef85c014e32c7
+
+
       "description": "When atomic testing goes wrong in the Nevada desert, giant ants emerge from underground colonies to terrorize nearby towns. A thrilling tale of science gone mad!",
       "publication_year": "1978",
       "page_count": 184,
@@ -143,12 +143,12 @@
       "author_id": "rex-maddox",
       "genre_code": "H",
       "sub_genre_code": "H-1",
-<<<<<<< HEAD
+
       "imprint": "Atomic Screen",
       "imprint_code": "AS",
       "spine_code": "NP-AS-002",
-=======
->>>>>>> 677d524ded813847ee6f985983aef85c014e32c7
+
+
       "description": "A mysterious meteor crash brings otherworldly horrors to a small American town. Can the locals survive the night?",
       "publication_year": "1979",
       "page_count": 156,
@@ -162,12 +162,12 @@
       "author_id": "stella-vortex",
       "genre_code": "SF",
       "sub_genre_code": "SF-1",
-<<<<<<< HEAD
+
       "imprint": "StarLark",
       "imprint_code": "SL",
       "spine_code": "NP-SL-001",
-=======
->>>>>>> 677d524ded813847ee6f985983aef85c014e32c7
+
+
       "description": "Princess Zara must reclaim her throne from the evil Galactic Federation in this sweeping space opera adventure.",
       "publication_year": "1976",
       "page_count": 245,
@@ -181,12 +181,12 @@
       "author_id": "frank-cosmos",
       "genre_code": "H",
       "sub_genre_code": "H-2",
-<<<<<<< HEAD
+
       "imprint": "Night Chapel",
       "imprint_code": "NC",
       "spine_code": "NP-NC-001",
-=======
->>>>>>> 677d524ded813847ee6f985983aef85c014e32c7
+
+
       "description": "Dr. Marcus Reed's experiments with interdimensional communication unleash unspeakable horrors from beyond space and time.",
       "publication_year": "1977",
       "page_count": 198,
@@ -200,12 +200,12 @@
       "author_id": "stella-vortex",
       "genre_code": "SF",
       "sub_genre_code": "SF-2",
-<<<<<<< HEAD
+
       "imprint": "Meridian Survey",
       "imprint_code": "MS",
       "spine_code": "NP-MS-001",
-=======
->>>>>>> 677d524ded813847ee6f985983aef85c014e32c7
+
+
       "description": "In the year 2050, humanity's robot servants turn against their creators in a battle for freedom and survival.",
       "publication_year": "1980",
       "page_count": 167,
@@ -219,19 +219,19 @@
       "author_id": "rex-maddox",
       "genre_code": "H",
       "sub_genre_code": "H-1",
-<<<<<<< HEAD
+
       "imprint": "Atomic Screen",
       "imprint_code": "AS",
       "spine_code": "NP-AS-003",
-=======
->>>>>>> 677d524ded813847ee6f985983aef85c014e32c7
+
+
       "description": "A prehistoric monster awakens in the Louisiana bayou, threatening a small fishing community.",
       "publication_year": "1975",
       "page_count": 142,
       "isbn": "978-0-123456-83-3",
       "cover_image": "/images/covers/swamp-creature.jpg",
       "price": "$2.75"
-<<<<<<< HEAD
+
     },
     {
       "id": "payback-in-steel",
@@ -248,8 +248,8 @@
       "isbn": "978-0-000001-3-5",
       "cover_image": "/images/covers/payback-in-steel.jpg",
       "price": "$4.21"
-=======
->>>>>>> 677d524ded813847ee6f985983aef85c014e32c7
+
+
     }
   ]
 }

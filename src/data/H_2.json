@@ -2,14 +2,14 @@
   "genre": "Horror",
   "line_code": "H",
   "sub_genre": "Classic Monster & Gothic Horror",
-<<<<<<< HEAD
+
   "sub_code": "H-2",
   "imprint": "Night Chapel",
   "imprint_code": "NC",
   "spine_code": "NP-NC", 
-=======
+
   "sub_code": "H-2", 
->>>>>>> 677d524ded813847ee6f985983aef85c014e32c7
+
   "authors": [
     {
       "author": {

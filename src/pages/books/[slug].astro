@@ -57,8 +57,8 @@ const relatedBooks = getBooksByAuthor(book.author_id).filter(b => b.id !== book.
             <span class="label">ISBN:</span>
             <span>{book.isbn}</span>
           </div>
-<<<<<<< HEAD
-=======
+
+
           {book.imprint && (
             <div class="meta-item">
               <span class="label">Imprint:</span>
@@ -71,7 +71,7 @@ const relatedBooks = getBooksByAuthor(book.author_id).filter(b => b.id !== book.
               <span class="spine-code">{book.spine_code}</span>
             </div>
           )}
->>>>>>> 677d524ded813847ee6f985983aef85c014e32c7
+
           <div class="meta-item price">
             <span class="label">Price:</span>
             <span class="price-value">{book.price}</span>
@@ -233,8 +233,8 @@ const relatedBooks = getBooksByAuthor(book.author_id).filter(b => b.id !== book.
     font-weight: bold;
   }
 
-<<<<<<< HEAD
-=======
+
+
   .imprint-name {
     color: #d2691e;
     font-weight: bold;
@@ -247,7 +247,7 @@ const relatedBooks = getBooksByAuthor(book.author_id).filter(b => b.id !== book.
     font-weight: bold;
   }
 
->>>>>>> 677d524ded813847ee6f985983aef85c014e32c7
+
   .book-description, .author-info {
     margin-bottom: 2rem;
   }
