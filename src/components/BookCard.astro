@@ -1,5 +1,6 @@
 ---
 import { getAuthorById, getGenreByCode, getSubGenreByCode } from '../utils/dataHelpers.js';
+import { getGenreColor, getSubGenreColor, getImprintColor } from '../utils/tagColors.js';
 
 export interface Props {
   book: any;
@@ -32,12 +33,9 @@ const subGenre = getSubGenreByCode(book.genre_code, book.sub_genre_code);
         <p class="book-author">by {author?.name}</p>
       </div>
       <div class="genre-tags">
-        <span class="genre-badge">{genre?.name}</span>
-        <span class="subgenre-badge">{subGenre?.name}</span>
-
-
-        {book.imprint && <span class="imprint-badge">{book.imprint}</span>}
-
+        <span class="genre-badge" style={`background-color: ${getGenreColor(genre?.name)}`}>{genre?.name}</span>
+        <span class="subgenre-badge" style={`background-color: ${getSubGenreColor(subGenre?.name)}`}>{subGenre?.name}</span>
+        {book.imprint && <span class="imprint-badge" style={`background-color: ${getImprintColor(book.imprint)}`}>{book.imprint}</span>}
       </div>
       <div class="book-meta">
         <span class="price">{book.price}</span>
@@ -131,33 +129,13 @@ const subGenre = getSubGenreByCode(book.genre_code, book.sub_genre_code);
     align-items: center;
   }
 
-  .genre-badge {
-    background: #000000;
+  .genre-badge, .subgenre-badge, .imprint-badge {
     color: #ffffff;
     padding: 0.25rem 0.5rem;
     border-radius: 4px;
     font-size: 0.75rem;
     font-weight: bold;
-  }
-
-  .subgenre-badge {
-    background: #666666;
-    color: #ffffff;
-    padding: 0.25rem 0.5rem;
-    border-radius: 4px;
-    font-size: 0.75rem;
-    font-weight: bold;
-  }
-
-
-
-  .imprint-badge {
-    background: #d2691e;
-    color: #ffffff;
-    padding: 0.25rem 0.5rem;
-    border-radius: 4px;
-    font-size: 0.75rem;
-    font-weight: bold;
+    /* Background color set via inline style for dynamic colors */
   }
 
 

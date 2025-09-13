@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { getAllBooks, getBookById, getAuthorById, getGenreByCode, getSubGenreByCode, getBooksByAuthor } from '../../utils/dataHelpers.js';
+import { getGenreColor, getSubGenreColor, getImprintColor } from '../../utils/tagColors.js';
 
 export async function getStaticPaths() {
   const books = getAllBooks();
@@ -44,12 +45,12 @@ const relatedBooks = getBooksByAuthor(book.author_id).filter(b => b.id !== book.
         <div class="book-meta">
           <div class="meta-item">
             <span class="label">Genre:</span>
-            <span class="genre-badge">{genre?.name}</span>
+            <span class="genre-badge" style={`background-color: ${getGenreColor(genre?.name)}`}>{genre?.name}</span>
           </div>
           {subGenre && (
             <div class="meta-item">
               <span class="label">Sub-Genre:</span>
-              <span class="subgenre-badge">{subGenre.name}</span>
+              <span class="subgenre-badge" style={`background-color: ${getSubGenreColor(subGenre.name)}`}>{subGenre.name}</span>
             </div>
           )}
           <div class="meta-item">
@@ -69,7 +70,7 @@ const relatedBooks = getBooksByAuthor(book.author_id).filter(b => b.id !== book.
           {book.imprint && (
             <div class="meta-item">
               <span class="label">Imprint:</span>
-              <span class="imprint-badge">{book.imprint}</span>
+              <span class="imprint-badge" style={`background-color: ${getImprintColor(book.imprint)}`}>{book.imprint}</span>
             </div>
           )}
           {book.spine_code && (
@@ -231,28 +232,12 @@ const relatedBooks = getBooksByAuthor(book.author_id).filter(b => b.id !== book.
     font-weight: bold;
   }
 
-  .genre-badge {
-    background: #000000;
+  .genre-badge, .subgenre-badge, .imprint-badge {
     color: #ffffff;
     padding: 0.25rem 0.75rem;
     border-radius: 4px;
     font-weight: bold;
-  }
-
-  .subgenre-badge {
-    background: #666666;
-    color: #ffffff;
-    padding: 0.25rem 0.75rem;
-    border-radius: 4px;
-    font-weight: bold;
-  }
-
-  .imprint-badge {
-    background: #d2691e;
-    color: #ffffff;
-    padding: 0.25rem 0.75rem;
-    border-radius: 4px;
-    font-weight: bold;
+    /* Background color set via inline style for dynamic colors */
   }
 
   .price-value {
