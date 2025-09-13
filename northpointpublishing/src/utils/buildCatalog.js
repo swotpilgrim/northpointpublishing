@@ -49,14 +49,10 @@ function consolidateCatalog() {
     const genre = genreMap.get(genreFile.line_code);
     const subGenre = {
       name: genreFile.sub_genre,
-<<<<<<< HEAD
       code: genreFile.sub_code,
       imprint: genreFile.imprint,
       imprint_code: genreFile.imprint_code,
       spine_code: genreFile.spine_code
-=======
-      code: genreFile.sub_code
->>>>>>> 677d524ded813847ee6f985983aef85c014e32c7
     };
     genre.sub_genres.push(subGenre);
 
@@ -86,7 +82,6 @@ function consolidateCatalog() {
           author_id: authorSlug,
           genre_code: genreFile.line_code,
           sub_genre_code: genreFile.sub_code,
-<<<<<<< HEAD
           imprint: genreFile.imprint,
           imprint_code: genreFile.imprint_code,
           spine_code: `${genreFile.spine_code}-${String(bookId).padStart(3, '0')}`,
@@ -96,14 +91,6 @@ function consolidateCatalog() {
           isbn: work.isbn || `978-0-${String(bookId).padStart(6, '0')}-${Math.floor(Math.random() * 10)}-${Math.floor(Math.random() * 10)}`,
           cover_image: work.cover_image || "/northpointpublishing/images/covers/cover_placeholder.png",
           price: work.price || "$" + (2.50 + Math.random() * 2).toFixed(2)
-=======
-          description: work.description,
-          publication_year: (1975 + Math.floor(Math.random() * 10)).toString(), // Random year 1975-1984
-          page_count: 140 + Math.floor(Math.random() * 120), // Random 140-260 pages
-          isbn: `978-0-${String(bookId).padStart(6, '0')}-${Math.floor(Math.random() * 10)}-${Math.floor(Math.random() * 10)}`,
-          cover_image: "/northpointpublishing/images/covers/cover_placeholder.png",
-          price: "$" + (2.50 + Math.random() * 2).toFixed(2) // Random $2.50-$4.50
->>>>>>> 677d524ded813847ee6f985983aef85c014e32c7
         };
         catalog.books.push(book);
         bookId++;

@@ -3,12 +3,9 @@
   "line_code": "A",
   "sub_genre": "1970s Grindhouse Style",
   "sub_code": "A-1",
-<<<<<<< HEAD
   "imprint": "Redline",
   "imprint_code": "RL",
   "spine_code": "NP-RL",
-=======
->>>>>>> 677d524ded813847ee6f985983aef85c014e32c7
   "authors": [
     {
       "author": {
@@ -18,15 +15,11 @@
       "works": [
         {
           "title": "Payback in Steel",
-<<<<<<< HEAD
           "description": "Ex-Marine Johnny Steel returns from Vietnam to find his brother murdered by corrupt cops working for the mob. Armed with military training and a sawed-off shotgun, he wages a one-man war through the city's underworld, leaving a trail of dead crooked badges and terrified crime bosses.",
           "publication_year": "1982",
           "page_count": 227,
           "isbn": "978-0-000001-3-5",
           "price": "$4.21"
-=======
-          "description": "Ex-Marine Johnny Steel returns from Vietnam to find his brother murdered by corrupt cops working for the mob. Armed with military training and a sawed-off shotgun, he wages a one-man war through the city's underworld, leaving a trail of dead crooked badges and terrified crime bosses."
->>>>>>> 677d524ded813847ee6f985983aef85c014e32c7
         },
         {
           "title": "The Enforcer's Last Stand",

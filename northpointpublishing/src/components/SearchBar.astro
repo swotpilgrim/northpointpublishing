@@ -1,0 +1,138 @@
+---
+// SearchBar component for filtering books
+---
+
+<div class="search-container">
+  <div class="search-box">
+    <input 
+      type="text" 
+      id="search-input" 
+      placeholder="Search by title, author, or description..."
+      class="search-input"
+    />
+    <button id="clear-search" class="clear-btn" type="button">✕</button>
+  </div>
+</div>
+
+<script>
+  const searchInput = document.getElementById('search-input') as HTMLInputElement;
+  const clearBtn = document.getElementById('clear-search') as HTMLButtonElement;
+
+  function handleSearch() {
+    const query = searchInput.value.toLowerCase().trim();
+    const books = document.querySelectorAll('.book-card');
+    
+    if (query === '') {
+      // Show all books if search is empty
+      books.forEach(book => {
+        (book as HTMLElement).style.display = 'block';
+      });
+    } else {
+      books.forEach(book => {
+        const title = book.querySelector('.book-title')?.textContent?.toLowerCase() || '';
+        const author = book.querySelector('.book-author')?.textContent?.toLowerCase() || '';
+        const genreBadge = book.querySelector('.genre-badge')?.textContent?.toLowerCase() || '';
+        const subgenreBadge = book.querySelector('.subgenre-badge')?.textContent?.toLowerCase() || '';
+        
+        // Search in multiple fields - title, author, genre, sub-genre
+        const searchFields = [title, author, genreBadge, subgenreBadge].join(' ');
+        
+        if (searchFields.includes(query)) {
+          (book as HTMLElement).style.display = 'block';
+        } else {
+          (book as HTMLElement).style.display = 'none';
+        }
+      });
+    }
+
+    updateResultsCount();
+  }
+
+  function updateResultsCount() {
+    const visibleBooks = document.querySelectorAll('.book-card[style*="block"], .book-card:not([style*="none"])');
+    const resultsCountEl = document.getElementById('results-count');
+    if (resultsCountEl) {
+      resultsCountEl.textContent = `${visibleBooks.length} books found`;
+    }
+  }
+
+  function clearSearch() {
+    searchInput.value = '';
+    const books = document.querySelectorAll('.book-card');
+    books.forEach(book => {
+      (book as HTMLElement).style.display = 'block';
+    });
+    updateResultsCount();
+  }
+
+  searchInput.addEventListener('input', handleSearch);
+  clearBtn.addEventListener('click', clearSearch);
+
+  // Initial count
+  document.addEventListener('DOMContentLoaded', updateResultsCount);
+</script>
+
+<style>
+  .search-container {
+    margin-bottom: 2rem;
+  }
+
+  .search-box {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .search-input {
+    width: 100%;
+    padding: 0.75rem 3rem 0.75rem 1rem;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    background: #ffffff;
+    color: #000000;
+    font-size: 1rem;
+    font-family: 'Georgia', serif;
+  }
+
+  .search-input:focus {
+    outline: none;
+    border-color: #000000;
+    box-shadow: 0 0 0 1px #000000;
+  }
+
+  .search-input::placeholder {
+    color: #999999;
+    font-style: italic;
+  }
+
+  .clear-btn {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #666666;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .clear-btn:hover {
+    color: #000000;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+  }
+
+  @media (max-width: 768px) {
+    .search-input {
+      font-size: 1rem;
+      padding: 0.75rem 2.5rem 0.75rem 0.75rem;
+    }
+  }
+</style>
