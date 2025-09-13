@@ -67,7 +67,8 @@ function consolidateCatalog() {
           id: authorSlug,
           name: authorName,
           bio: authorEntry.author.trade_description,
-          specialty: genreFile.sub_genre
+          specialty: genreFile.sub_genre,
+          image: `/northpointpublishing/images/authors/${authorSlug}.jpg`
         };
         authorMap.set(authorSlug, author);
         catalog.authors.push(author);
@@ -89,7 +90,7 @@ function consolidateCatalog() {
           publication_year: work.publication_year || (1975 + Math.floor(Math.random() * 10)).toString(),
           page_count: work.page_count || (140 + Math.floor(Math.random() * 120)),
           isbn: work.isbn || `978-0-${String(bookId).padStart(6, '0')}-${Math.floor(Math.random() * 10)}-${Math.floor(Math.random() * 10)}`,
-          cover_image: work.cover_image || "/northpointpublishing/images/covers/cover_placeholder.png",
+          cover_image: work.cover_image || `/northpointpublishing/images/covers/${bookSlug}.jpg`,
           price: work.price || "$" + (2.50 + Math.random() * 2).toFixed(2)
         };
         catalog.books.push(book);

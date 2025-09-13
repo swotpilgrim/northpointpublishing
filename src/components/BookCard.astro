@@ -23,7 +23,12 @@ const subGenre = getSubGenreByCode(book.genre_code, book.sub_genre_code);
     <div class="book-info">
       <h3 class="book-title">{book.title}</h3>
       <div class="author-section">
-        <img src="/northpointpublishing/images/authors/author_placeholder.jpg" alt={author?.name} class="author-image" />
+        <img
+          src={author?.image || "/northpointpublishing/images/authors/author_placeholder.jpg"}
+          alt={author?.name}
+          class="author-image"
+          onerror="this.src='/northpointpublishing/images/authors/author_placeholder.jpg'"
+        />
         <p class="book-author">by {author?.name}</p>
       </div>
       <div class="genre-tags">

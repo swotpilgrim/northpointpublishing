@@ -86,7 +86,12 @@ const relatedBooks = getBooksByAuthor(book.author_id).filter(b => b.id !== book.
         {author && (
           <div class="author-info">
             <div class="author-header">
-              <img src="/northpointpublishing/images/authors/author_placeholder.jpg" alt={author.name} class="author-photo" />
+              <img
+                src={author.image || "/northpointpublishing/images/authors/author_placeholder.jpg"}
+                alt={author.name}
+                class="author-photo"
+                onerror="this.src='/northpointpublishing/images/authors/author_placeholder.jpg'"
+              />
               <h3>About the Author</h3>
             </div>
             <p><strong>{author.name}</strong> - {author.bio}</p>
