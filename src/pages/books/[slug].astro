@@ -1,6 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { getAllBooks, getBookById, getAuthorById, getGenreByCode, getBooksByAuthor } from '../../utils/dataHelpers.js';
+import { getAllBooks, getBookById, getAuthorById, getGenreByCode, getSubGenreByCode, getBooksByAuthor } from '../../utils/dataHelpers.js';
 
 export async function getStaticPaths() {
   const books = getAllBooks();
@@ -18,6 +18,7 @@ if (!book) {
 
 const author = getAuthorById(book.author_id);
 const genre = getGenreByCode(book.genre_code);
+const subGenre = getSubGenreByCode(book.genre_code, book.sub_genre_code);
 const relatedBooks = getBooksByAuthor(book.author_id).filter(b => b.id !== book.id).slice(0, 3);
 ---
 
@@ -45,6 +46,12 @@ const relatedBooks = getBooksByAuthor(book.author_id).filter(b => b.id !== book.
             <span class="label">Genre:</span>
             <span class="genre-badge">{genre?.name}</span>
           </div>
+          {subGenre && (
+            <div class="meta-item">
+              <span class="label">Sub-Genre:</span>
+              <span class="subgenre-badge">{subGenre.name}</span>
+            </div>
+          )}
           <div class="meta-item">
             <span class="label">Published:</span>
             <span>{book.publication_year}</span>
@@ -62,7 +69,7 @@ const relatedBooks = getBooksByAuthor(book.author_id).filter(b => b.id !== book.
           {book.imprint && (
             <div class="meta-item">
               <span class="label">Imprint:</span>
-              <span class="imprint-name">{book.imprint}</span>
+              <span class="imprint-badge">{book.imprint}</span>
             </div>
           )}
           {book.spine_code && (
@@ -232,18 +239,26 @@ const relatedBooks = getBooksByAuthor(book.author_id).filter(b => b.id !== book.
     font-weight: bold;
   }
 
+  .subgenre-badge {
+    background: #666666;
+    color: #ffffff;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+
+  .imprint-badge {
+    background: #d2691e;
+    color: #ffffff;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+
   .price-value {
     color: #000000;
     font-size: 1.2rem;
     font-weight: bold;
-  }
-
-
-
-  .imprint-name {
-    color: #d2691e;
-    font-weight: bold;
-    font-style: italic;
   }
 
   .spine-code {
