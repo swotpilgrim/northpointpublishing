@@ -25,21 +25,16 @@ jobs:
         with:
           node-version: '18'
           cache: npm
-          cache-dependency-path: 'northpointpublishing/package-lock.json'
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Install dependencies
-        run: |
-          cd northpointpublishing
-          npm ci
+        run: npm ci
       - name: Build
-        run: |
-          cd northpointpublishing
-          npm run build
+        run: npm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./northpointpublishing/dist
+          path: ./dist
 
   deploy:
     environment:
