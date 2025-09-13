@@ -40,35 +40,36 @@ function generateColorFromHash(text, type = 'genre') {
   return `hsl(${hue}, ${saturation}%, ${lightness}%)`;
 }
 
-// Pre-defined color mappings for better visual consistency
+// Pre-defined color mappings with highly distinct, contrasting colors
+// Each color is chosen to be maximally different from all others
 export const GENRE_COLORS = {
-  'Action': '#c62d42',        // Red
-  'Horror': '#8b2635',        // Dark red
-  'Science Fiction': '#2563eb', // Blue
-  'Romance': '#e91e63',       // Pink
-  'Spy': '#1f2937'           // Dark gray/black
+  'Action': '#ff0000',           // Pure red - high energy
+  'Horror': '#4b0082',           // Indigo - dark and mysterious
+  'Science Fiction': '#00bfff',  // Deep sky blue - futuristic
+  'Romance': '#ff69b4',          // Hot pink - romantic
+  'Spy': '#2f4f2f'              // Dark slate gray - secretive
 };
 
 export const SUBGENRE_COLORS = {
-  '1970s Grindhouse Style': '#dc2626',     // Bright red
-  '1950s B-Movie Horror': '#7c2d12',       // Dark red-brown
-  'Gothic Vampires': '#581c87',            // Dark purple
-  'Contemporary Horror': '#374151',        // Dark gray
-  '1960s Retro-Futuristic': '#0ea5e9',    // Cyan
-  '1950s Teen Romance': '#ec4899',         // Hot pink
-  'YA Supernatural Teen Drama': '#a855f7', // Purple
-  '60s Style Action Adventure': '#475569'   // Slate gray
+  '1970s Grindhouse Style': '#ff4500',      // Orange red - retro energy
+  '1950s B-Movie Horror': '#800080',        // Purple - classic horror
+  'Gothic Vampires': '#8b0000',             // Dark red - blood/gothic
+  'Contemporary Horror': '#556b2f',         // Dark olive green - modern edge
+  '1960s Retro-Futuristic': '#00ced1',     // Dark turquoise - space age
+  '1950s Teen Romance': '#dc143c',          // Crimson - passionate
+  'YA Supernatural Teen Drama': '#9370db',  // Medium purple - mystical
+  '60s Style Action Adventure': '#b8860b'   // Dark golden rod - adventure
 };
 
 export const IMPRINT_COLORS = {
-  'Redline': '#ef4444',          // Red (matches name)
-  'Atomic Screen': '#22d3ee',     // Cyan (atomic/sci-fi feel)
-  'Night Chapel': '#4c1d95',      // Dark purple (gothic)
-  'Lido Noir': '#1f2937',         // Very dark gray (noir)
-  'StarLark': '#3b82f6',          // Blue (space theme)
-  'Blue Ribbon': '#2563eb',       // Blue (matches name)
-  'Moon & Locker': '#6366f1',     // Indigo (mystical)
-  'Shadow Bureau': '#374151'      // Dark gray (spy/shadow theme)
+  'Redline': '#ff1493',          // Deep pink - vibrant energy
+  'Atomic Screen': '#00ff7f',    // Spring green - atomic glow
+  'Night Chapel': '#191970',     // Midnight blue - gothic night
+  'Lido Noir': '#000000',        // Pure black - noir darkness
+  'StarLark': '#ffd700',         // Gold - stellar brightness
+  'Blue Ribbon': '#4169e1',      // Royal blue - premium quality
+  'Moon & Locker': '#da70d6',    // Orchid - magical/mystical
+  'Shadow Bureau': '#696969'     // Dim gray - shadowy operations
 };
 
 // Main function to get color for any tag
