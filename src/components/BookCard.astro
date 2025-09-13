@@ -29,6 +29,7 @@ const subGenre = getSubGenreByCode(book.genre_code, book.sub_genre_code);
       <div class="genre-tags">
         <span class="genre-badge">{genre?.name}</span>
         <span class="subgenre-badge">{subGenre?.name}</span>
+        {book.imprint && <span class="imprint-badge">{book.imprint}</span>}
       </div>
       <div class="book-meta">
         <span class="price">{book.price}</span>
@@ -133,6 +134,15 @@ const subGenre = getSubGenreByCode(book.genre_code, book.sub_genre_code);
 
   .subgenre-badge {
     background: #666666;
+    color: #ffffff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: bold;
+  }
+
+  .imprint-badge {
+    background: #d2691e;
     color: #ffffff;
     padding: 0.25rem 0.5rem;
     border-radius: 4px;
