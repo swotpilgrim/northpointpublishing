@@ -67,3 +67,27 @@ export function getAllGenres() {
 export function getPublisher() {
   return catalogData.publisher;
 }
+
+export function getAllImprints() {
+  const imprints = [];
+  const imprintMap = new Map();
+
+  catalogData.genres.forEach(genre => {
+    genre.sub_genres.forEach(subGenre => {
+      if (subGenre.imprint && !imprintMap.has(subGenre.imprint)) {
+        imprintMap.set(subGenre.imprint, {
+          name: subGenre.imprint,
+          code: subGenre.imprint_code,
+          spine_code: subGenre.spine_code
+        });
+        imprints.push({
+          name: subGenre.imprint,
+          code: subGenre.imprint_code,
+          spine_code: subGenre.spine_code
+        });
+      }
+    });
+  });
+
+  return imprints.sort((a, b) => a.name.localeCompare(b.name));
+}

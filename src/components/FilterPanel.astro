@@ -1,9 +1,10 @@
 ---
-import { getAllAuthors, getAllGenres, getAllSubGenres } from '../utils/dataHelpers.js';
+import { getAllAuthors, getAllGenres, getAllSubGenres, getAllImprints } from '../utils/dataHelpers.js';
 
 const authors = getAllAuthors();
 const genres = getAllGenres();
 const subGenres = getAllSubGenres();
+const imprints = getAllImprints();
 ---
 
 <div class="filter-panel">
@@ -39,11 +40,22 @@ const subGenres = getAllSubGenres();
     </div>
 
     <div class="filter-group">
+      <label for="imprint-filter">Imprint:</label>
+      <select id="imprint-filter" class="filter-select">
+        <option value="">All Imprints</option>
+        {imprints.map(imprint => (
+          <option value={imprint.name}>{imprint.name}</option>
+        ))}
+      </select>
+    </div>
+
+    <div class="filter-group">
       <label for="sort-select">Sort by:</label>
       <select id="sort-select" class="filter-select">
         <option value="title">Title A-Z</option>
         <option value="author">Author</option>
         <option value="year">Publication Year</option>
+        <option value="imprint">Imprint</option>
       </select>
     </div>
 
@@ -59,6 +71,7 @@ const subGenres = getAllSubGenres();
   const genreFilter = document.getElementById('genre-filter') as HTMLSelectElement;
   const subGenreFilter = document.getElementById('subgenre-filter') as HTMLSelectElement;
   const authorFilter = document.getElementById('author-filter') as HTMLSelectElement;
+  const imprintFilter = document.getElementById('imprint-filter') as HTMLSelectElement;
   const sortSelect = document.getElementById('sort-select') as HTMLSelectElement;
   const clearFiltersBtn = document.getElementById('clear-filters') as HTMLButtonElement;
 
@@ -66,6 +79,7 @@ const subGenres = getAllSubGenres();
     const selectedGenre = genreFilter.value;
     const selectedSubGenre = subGenreFilter.value;
     const selectedAuthor = authorFilter.value;
+    const selectedImprint = imprintFilter.value;
     const books = document.querySelectorAll('.book-card');
     
     books.forEach(book => {
@@ -92,11 +106,20 @@ const subGenres = getAllSubGenres();
         }
       }
       
-      // Author filter  
+      // Author filter
       if (selectedAuthor && shouldShow) {
         const authorName = book.querySelector('.book-author')?.textContent || '';
         const selectedAuthorName = authorFilter.options[authorFilter.selectedIndex]?.textContent || '';
         if (!authorName.includes(selectedAuthorName)) {
+          shouldShow = false;
+        }
+      }
+
+      // Imprint filter
+      if (selectedImprint && shouldShow) {
+        const imprintBadge = book.querySelector('.imprint-badge')?.textContent || '';
+        const imprint = imprintBadge.trim();
+        if (imprint !== selectedImprint) {
           shouldShow = false;
         }
       }
@@ -130,6 +153,10 @@ const subGenres = getAllSubGenres();
         const yearA = a.querySelector('.publication-year')?.textContent || '';
         const yearB = b.querySelector('.publication-year')?.textContent || '';
         return yearB.localeCompare(yearA); // Newest first
+      } else if (sortBy === 'imprint') {
+        const imprintA = a.querySelector('.imprint-badge')?.textContent || '';
+        const imprintB = b.querySelector('.imprint-badge')?.textContent || '';
+        return imprintA.localeCompare(imprintB);
       }
       return 0;
     });
@@ -152,6 +179,7 @@ const subGenres = getAllSubGenres();
     genreFilter.value = '';
     subGenreFilter.value = '';
     authorFilter.value = '';
+    imprintFilter.value = '';
     sortSelect.value = 'title';
     
     const books = document.querySelectorAll('.book-card');
@@ -166,6 +194,7 @@ const subGenres = getAllSubGenres();
   genreFilter.addEventListener('change', applyFilters);
   subGenreFilter.addEventListener('change', applyFilters);
   authorFilter.addEventListener('change', applyFilters);
+  imprintFilter.addEventListener('change', applyFilters);
   sortSelect.addEventListener('change', applySorting);
   clearFiltersBtn.addEventListener('click', clearAllFilters);
 
