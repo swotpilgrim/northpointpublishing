@@ -215,8 +215,8 @@ const imprints = getAllImprints();
 
   .filter-controls {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 0.75rem;
     align-items: end;
     margin-bottom: 1rem;
   }
@@ -230,16 +230,17 @@ const imprints = getAllImprints();
   .filter-group label {
     color: #000000;
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 
   .filter-select {
-    padding: 0.5rem;
+    padding: 0.4rem;
     border: 1px solid #cccccc;
     border-radius: 4px;
     background: #ffffff;
     color: #000000;
     font-family: 'Georgia', serif;
+    font-size: 0.9rem;
   }
 
   .filter-select:focus {
@@ -248,12 +249,13 @@ const imprints = getAllImprints();
   }
 
   .clear-filters-btn {
-    padding: 0.5rem 1rem;
+    padding: 0.4rem 0.8rem;
     background: #000000;
     color: #ffffff;
     border: none;
     border-radius: 4px;
     font-weight: bold;
+    font-size: 0.9rem;
     cursor: pointer;
     transition: background-color 0.2s ease;
   }
