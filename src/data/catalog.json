@@ -11,25 +11,24 @@
       "sub_genres": [
         {
           "name": "1950s B-Movie Horror",
-
           "code": "H-1",
           "imprint": "Atomic Screen",
           "imprint_code": "AS",
           "spine_code": "NP-AS"
         },
         {
-          "name": "Cosmic Horror",
+          "name": "Gothic Vampires",
           "code": "H-2",
           "imprint": "Night Chapel",
           "imprint_code": "NC",
           "spine_code": "NP-NC"
-
-          "code": "H-1"
         },
         {
-          "name": "Cosmic Horror",
-          "code": "H-2"
-
+          "name": "Contemporary Horror",
+          "code": "H-3",
+          "imprint": "Lido Noir",
+          "imprint_code": "LN",
+          "spine_code": "NP-LN"
         }
       ]
     },
@@ -38,19 +37,11 @@
       "code": "SF",
       "sub_genres": [
         {
-          "name": "Space Opera",
-
+          "name": "1960s Retro-Futuristic",
           "code": "SF-1",
           "imprint": "StarLark",
           "imprint_code": "SL",
           "spine_code": "NP-SL"
-        },
-        {
-          "name": "Atomic Age Sci-Fi",
-          "code": "SF-2",
-          "imprint": "Meridian Survey",
-          "imprint_code": "MS",
-          "spine_code": "NP-MS"
         }
       ]
     },
@@ -77,13 +68,13 @@
           "imprint": "Blue Ribbon",
           "imprint_code": "BR",
           "spine_code": "NP-BR"
-
-          "code": "SF-1"
         },
         {
-          "name": "Atomic Age Sci-Fi",
-          "code": "SF-2"
-
+          "name": "YA Supernatural Teen Drama",
+          "code": "R-2",
+          "imprint": "Moon & Locker",
+          "imprint_code": "ML",
+          "spine_code": "NP-ML"
         }
       ]
     }
