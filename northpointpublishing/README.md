@@ -1,6 +1,6 @@
 # North Point Publishing Catalog
 
-A retro-styled catalog website showcasing North Point Publishing's pulp fiction collection from the 1950s-1980s.
+A retro-styled catalog website showcasing North Point Publishing's pulp fiction collection from the 1950s-1980s with house imprint codes.
 
 ## 🚀 Project Structure
 
