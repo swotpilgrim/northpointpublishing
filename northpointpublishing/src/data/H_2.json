@@ -1,0 +1,123 @@
+{
+  "genre": "Horror",
+  "line_code": "H",
+  "sub_genre": "Classic Monster & Gothic Horror",
+  "sub_code": "H-2",
+  "imprint": "Night Chapel",
+  "imprint_code": "NC",
+  "spine_code": "NP-NC", 
+  "authors": [
+    {
+      "author": {
+        "name": "Marcus Blackthorne",
+        "trade_description": "The undisputed master of Gothic vampire fiction, crafting tales of aristocratic bloodsuckers in crumbling European castles. Blackthorne's sophisticated predators view humans as cattle in stories that drip with decadent Old World atmosphere."
+      },
+      "works": [
+        {
+          "title": "The Crimson Countess of Carpathia",
+          "description": "A beautiful Romanian noblewoman lures unsuspecting travelers to her mountain castle, where centuries of bloodlust have transformed her into an elegant predator. Her latest victim, a young archaeologist, must escape before becoming another portrait in her gallery of the damned."
+        },
+        {
+          "title": "Blood Vintage of Castle Valdris",
+          "description": "An American wine merchant inherits a Transylvanian vineyard, unaware that the estate's legendary vintage requires a very special ingredient. As workers disappear and the wine cellar reveals its grisly secrets, he discovers he's been feeding an ancient thirst."
+        },
+        {
+          "title": "The Midnight Masquerade",
+          "description": "Venice's most exclusive costume ball becomes a feeding ground when centuries-old vampires use Carnival as cover for their hunt. A young opera singer must unmask the undead aristocrats before she becomes the final course in their feast of blood."
+        },
+        {
+          "title": "Shadows Over Ravenshire Abbey",
+          "description": "A Victorian scholar investigating medieval manuscripts at a remote English abbey discovers the monks never left - they simply traded holy orders for unholy appetites. Trapped by winter storms, she faces an eternity of scholarly pursuit with very sharp teeth."
+        },
+        {
+          "title": "The Collector of Crimson",
+          "description": "A wealthy art dealer's obsession with acquiring a mysterious medieval painting leads him to a Bavarian castle where the portrait's subject still resides. The beautiful vampire who posed for it centuries ago is eager to add him to her collection of devoted thralls."
+        }
+      ]
+    },
+    {
+      "author": {
+        "name": "Ezra Nightfall",
+        "trade_description": "The premier chronicler of lycanthropic terror, exploring the savage beast that lurks within civilized man. Nightfall's werewolf transformations are brutal affairs set in small towns where monsters hide among neighbors until the full moon reveals the truth."
+      },
+      "works": [
+        {
+          "title": "Moonrise Over Millbrook", 
+          "description": "A series of brutal animal attacks plague a peaceful New England town just as a mysterious drifter arrives. The local sheriff must uncover which of his trusted neighbors transforms into a savage predator when the moon is full."
+        },
+        {
+          "title": "The Pack of Pine Ridge",
+          "description": "A forest ranger discovers an entire family of werewolves has been living in the wilderness for generations. When developers threaten their territory, the beasts emerge to protect their hunting grounds with primal fury."
+        },
+        {
+          "title": "Beast of the Boarding School",
+          "description": "Students at an exclusive mountain academy begin disappearing during camping trips. A young teacher realizes the headmaster's 'wilderness survival' program is actually feeding students to something that hunts on two legs and four."
+        },
+        {
+          "title": "The Werewolf of Willow Creek",
+          "description": "A small town veterinarian notices disturbing patterns in local animal attacks just as a charismatic new preacher arrives to lead a revival. When the congregation starts howling hymns under the full moon, faith becomes a very different kind of transformation."
+        },
+        {
+          "title": "Hunting Season",
+          "description": "A big city hunter comes to rural Montana for elk season but becomes the prey when he stumbles into territory claimed by creatures that hunt with more than just animal instinct. Survival means accepting that some predators were once human."
+        }
+      ]
+    },
+    {
+      "author": {
+        "name": "Theodore Ravencrest",
+        "trade_description": "Master of scientific gothic horror inspired by Frankenstein's legacy. Ravencrest chronicles tragic monsters born from hubris and reanimated dead seeking revenge or belonging, with mad scientists whose ambitions destroy everything they touch."
+      },
+      "works": [
+        {
+          "title": "The Surgeon of Shadowmere",
+          "description": "A brilliant doctor obsessed with conquering death begins stitching together the perfect human from his morgue's finest specimens. When his creation awakens, it demands a companion - and threatens to tear apart the town until its maker provides one."
+        },
+        {
+          "title": "Laboratory of Lost Souls", 
+          "description": "A university researcher's experiments with electrical resurrection succeed too well, creating an army of confused undead who remember only fragments of their former lives. The reanimated victims seek answers from their creator with increasingly violent methods."
+        },
+        {
+          "title": "The Bride of Professor Blackwood",
+          "description": "A grieving scientist attempts to resurrect his deceased wife using tissue samples and electrical stimulation. The woman who awakens has her memories but not her soul, and her growing hunger for human flesh makes their reunion a nightmare of twisted love."
+        },
+        {
+          "title": "Children of the Storm",
+          "description": "An orphanage director's secret experiments with lightning and corpses create a family of patchwork children who view him as their loving father. When authorities investigate the institution, the undead orphans defend their creator with childish innocence and superhuman strength."
+        },
+        {
+          "title": "The Anatomy Lesson",
+          "description": "Medical students at a prestigious university discover their cadavers are showing signs of consciousness during dissection. Their professor's revolutionary preservation techniques have trapped souls in dead flesh, and the specimens want their bodies back."
+        }
+      ]
+    },
+    {
+      "author": {
+        "name": "Mordecai Shadowmere",
+        "trade_description": "The premier chronicler of spectral terror and ghostly manifestations. Shadowmere's spirits are bound to specific locations through violent deaths or unfinished business, haunting protagonists to madness in stories of supernatural persecution."
+      },
+      "works": [
+        {
+          "title": "The Whispering Walls of Wickham Manor",
+          "description": "A young couple inherits a Victorian mansion where previous owners met mysterious deaths. As they restore the house, the walls begin bleeding and voices from the past demand justice for murders covered up for decades."
+        },
+        {
+          "title": "Phantom of the Lighthouse",
+          "description": "A Coast Guard keeper at a remote lighthouse discovers why ships still crash on the rocks despite his beacon. The ghost of a previous keeper continues his duties from beyond the grave, luring vessels to their doom out of misguided loyalty."
+        },
+        {
+          "title": "The Haunting of Holloway Hospital",
+          "description": "Night shift nurses at an abandoned psychiatric hospital experience increasingly violent supernatural encounters. The spirits of patients who died under questionable circumstances refuse to rest until the truth about their treatments is exposed."
+        },
+        {
+          "title": "Specter in the Schoolhouse",
+          "description": "A teacher at a rural one-room school discovers her classroom is haunted by a child who died in a fire decades earlier. The young ghost desperately tries to warn about a tragedy that will repeat itself unless someone finally listens to his message."
+        },
+        {
+          "title": "The Vengeful Bride of Ravenshollow",
+          "description": "A wedding photographer documenting ceremonies at a historic mansion keeps capturing unexplained figures in his pictures. The ghost of a bride murdered on her wedding night appears in every photo, seeking justice against the family that killed her for inheritance money."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "genre": "Horror",
+  "line_code": "H",
+  "sub_genre": "1950s B-Movie Horror", 
+  "sub_code": "H-1",
+  "imprint": "Atomic Screen",
+  "imprint_code": "AS",
+  "spine_code": "NP-AS",
+  "authors": [
+    {
+      "author": {
+        "name": "Rex 'Buzz' Maddox",
+        "trade_description": "The undisputed king of atomic-age monster terror. Maddox transforms everyday small-town America into ground zero for radioactive nightmares, featuring giant insects, mutated beasts, and blob creatures that ooze pure terror."
+      },
+      "works": [
+        {
+          "title": "The Atomic Ant Colony",
+          "description": "When atomic testing in Nevada goes wrong, giant ants emerge from underground tunnels to terrorize the sleepy town of Desert Springs. Only a determined sheriff and a nuclear scientist can stop the mandible menace before they reach Las Vegas."
+        },
+        {
+          "title": "Blob from Bikini Atoll",
+          "description": "A radioactive mass of living protoplasm washes ashore after hydrogen bomb tests, consuming everything in its path as it grows larger. A small coastal town becomes an all-you-can-eat buffet for this unstoppable atomic appetite."
+        },
+        {
+          "title": "The Mutant Mantis of Millfield",
+          "description": "Pesticide experiments create a twenty-foot praying mantis that stalks teenagers through cornfields. The local drive-in becomes a hunting ground when the creature develops a taste for young couples on dates."
+        },
+        {
+          "title": "Radioactive Roaches",
+          "description": "Nuclear waste transforms common cockroaches into car-sized predators that invade suburban homes through sewers. A housewife and an exterminator must save their neighborhood from becoming an insect empire."
+        },
+        {
+          "title": "The Plutonium Spider",
+          "description": "A laboratory accident creates a massive radioactive spider that spins webs across an entire town. Citizens become cocooned victims while scientists race to find an antidote before the creature spawns an army of atomic arachnids."
+        }
+      ]
+    },
+    {
+      "author": {
+        "name": "Vincent Torrino", 
+        "trade_description": "Master of cinematic creature features that leap off the page like Saturday matinee thrills. Torrino specializes in giant prehistoric beasts and oversized insects that rampage through suburban America with spectacular results."
+      },
+      "works": [
+        {
+          "title": "Terror-Dactyl Over Tucson",
+          "description": "A prehistoric pterodactyl awakened by atomic blasts swoops down on an Arizona suburb, snatching children from backyard pools. Fighter jets and a brave crop duster pilot engage in aerial combat with the flying fossil."
+        },
+        {
+          "title": "The Suburban Stegosaurus",
+          "description": "Construction work unearths a living dinosaur that rampages through split-level developments, crushing station wagons and terrorizing PTA meetings. The National Guard faces their most unusual enemy in this tale of prehistoric pandemonium."
+        },
+        {
+          "title": "Giant Grasshopper Invasion",
+          "description": "Radiation creates swarms of enormous grasshoppers that devour everything from crops to cars. A small farming community fights back with flamethrowers and DDT as the hoppers threaten to eat America bare."
+        },
+        {
+          "title": "The Atomic Alligator",
+          "description": "Nuclear testing in the Everglades creates a colossal crocodilian that terrorizes Florida vacation resorts. Tourists become appetizers while a big game hunter and marine biologist track the beast through scenic swamplands."
+        },
+        {
+          "title": "Bee-hemoth!",
+          "description": "Atomic honey creates super-sized killer bees that build hives in suburban attics. When they swarm, entire neighborhoods evacuate as these buzzing behemoths turn peaceful suburbia into a war zone of stings and terror."
+        }
+      ]
+    },
+    {
+      "author": {
+        "name": "Chester 'Chet' Grimwald",
+        "trade_description": "The voice of teenage terror, blending cosmic horror with coming-of-age drama. Grimwald's young heroes face ancient evils and alien infiltrators with authentic teenage dialogue and surprising competence."
+      },
+      "works": [
+        {
+          "title": "Prom Night from Planet X",
+          "description": "High school seniors discover their new exchange students are actually alien scouts preparing Earth for invasion. The prom becomes ground zero when the teenagers must stop the extraterrestrial plot while still getting crowned king and queen."
+        },
+        {
+          "title": "The Cheerleaders vs. The Old Ones",
+          "description": "The Millbrook High cheer squad accidentally awakens Lovecraftian horrors during a sleepover seance. These peppy teenagers must use their athletic skills and team spirit to send cosmic entities back to their dimensional prison."
+        },
+        {
+          "title": "Detention with the Devil",
+          "description": "Saturday detention becomes supernatural survival when students discover their school was built on a demonic burial ground. Six mismatched teens must work together to escape before the ancient evil claims their souls for eternity."
+        },
+        {
+          "title": "The Faculty Pod People",
+          "description": "When teachers start acting strangely, the junior class realizes alien body snatchers have infiltrated Roosevelt High. A group of unlikely heroes must expose the conspiracy while maintaining their GPAs and dating lives."
+        },
+        {
+          "title": "Homecoming Horror",
+          "description": "The homecoming dance unleashes an ancient curse when the school's Indian burial ground mascot comes to life. The football team and student council must join forces to defeat spectral warriors before graduation becomes eternal damnation."
+        }
+      ]
+    }
+  ]
+}
