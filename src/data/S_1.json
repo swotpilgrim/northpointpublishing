@@ -1,0 +1,67 @@
+{
+  "genre": "Spy",
+  "line_code": "S", 
+  "sub_genre": "60s Style Action Adventure",
+  "sub_code": "S-1",
+  "imprint": "Shadow Bureau",
+  "imprint_code": "SB",
+  "spine_code": "NP-SB",
+  "authors": [
+    {
+      "author": {
+        "name": "Maxwell Hunt",
+        "trade_description": "Master of globe-trotting espionage adventures featuring sophisticated agents who battle criminal organizations and rogue nations. Hunt's stories emphasize cutting-edge gadgets, high-speed chases, and elaborate death traps, with villains operating from secret bases pursuing schemes involving stolen satellites, biological weapons, and international blackmail."
+      },
+      "works": [
+        {
+          "title": "Operation: Thunderbolt",
+          "description": "Agent Derek Stone infiltrates SPECTRE's underwater base in the Caribbean to stop their plan to hijack American nuclear submarines. Armed with an exploding cigarette lighter and a submarine car, he battles through shark-infested waters and laser death traps to prevent World War III."
+        },
+        {
+          "title": "The Satellite Conspiracy", 
+          "description": "When Soviet spy satellites start mysteriously disappearing, super-spy Rex Steele discovers a criminal mastermind is stealing them to create a private space army. From the casinos of Monte Carlo to a secret moon base, he uses rocket packs and magnetic watches to stop the ultimate heist."
+        },
+        {
+          "title": "Diamonds Are for Killing",
+          "description": "International diamond smuggler Viktor Kronos plans to corner the world's supply by destroying South African mines with stolen atomic warheads. Agent Lance Sterling goes undercover in the jet-set world of gem dealers, using a radioactive tracking device and an Aston Martin with ejector seats to stop the scheme."
+        },
+        {
+          "title": "The Doomsday Formula",
+          "description": "Mad scientist Dr. Omega threatens to release a biological weapon that turns water into acid unless world governments pay his billion-dollar ransom. Agent Brad Falcon races from Hong Kong to the Amazon using a jet-powered speedboat and truth serum bullets to locate the hidden laboratory."
+        },
+        {
+          "title": "Casino Royale Revenge",
+          "description": "SMERSH operative Natasha Volkov plans to bankrupt NATO countries by rigging every casino in Europe through an elaborate computer conspiracy. Agent Jack Diamond must beat her at her own game using loaded dice, x-ray contact lenses, and a helicopter built into his sports car."
+        }
+      ]
+    },
+    {
+      "author": {
+        "name": "Diana Steele",
+        "trade_description": "Specialist in sophisticated espionage featuring female agents who use seduction and cunning to infiltrate enemy organizations. Steele's heroines are elegant operatives equally comfortable in firefights or diplomatic receptions, often using fashion houses, art galleries, and international social scenes as covers for intelligence operations."
+      },
+      "works": [
+        {
+          "title": "The Mata Hari Murders",
+          "description": "Elite agent Sophia Cross goes undercover as a fashion model in Paris to expose a spy ring using the couture industry to smuggle secrets. Armed with lipstick explosives and a hairpin radio, she navigates haute couture catwalks and embassy parties to unmask the deadly fashionista mastermind."
+        },
+        {
+          "title": "Countess of Conspiracy",
+          "description": "When European nobility start dying under suspicious circumstances, agent Victoria Sterling poses as a wealthy widow to infiltrate high society. Using poison perfume and a compact mirror camera, she discovers a plot to assassinate world leaders at an exclusive Swiss ski resort."
+        },
+        {
+          "title": "The Art of Espionage",
+          "description": "International art thief and spy Alexis Blake must recover stolen Da Vinci paintings that contain microfilm revealing NATO's defense plans. From New York galleries to Venice palazzos, she uses knockout jewelry and a motorcycle hidden in her limousine to outwit SPECTRE agents."
+        },
+        {
+          "title": "Diamonds and Deception",
+          "description": "Agent Catherine Fox infiltrates the glamorous world of international gem auctions to stop a terrorist organization from using blood diamonds to fund nuclear weapons. Armed with laser earrings and a submarine evening gown, she pursues the conspiracy from London to Monte Carlo."
+        },
+        {
+          "title": "The Embassy Ball Affair",
+          "description": "During a crucial peace summit, agent Monica Sterling must identify and eliminate a master assassin targeting world leaders at diplomatic receptions. Using dancing shoe daggers and champagne glass bugs, she works through embassy parties and state dinners to prevent international war."
+        }
+      ]
+    }
+  ]
+}
