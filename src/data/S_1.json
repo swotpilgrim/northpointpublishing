@@ -65,6 +65,54 @@
           "description": "During a crucial peace summit, agent Monica Sterling must identify and eliminate a master assassin targeting world leaders at diplomatic receptions. Using dancing shoe daggers and champagne glass bugs, she works through embassy parties and state dinners to prevent international war."
         }
       ]
+    },
+    {
+      "author": {
+        "name": "Anthony Cross",
+        "trade_description": "Pioneer of realistic Cold War espionage fiction featuring morally ambiguous operatives navigating the brutal realities of intelligence work. Cross's protagonists are burned-out professionals dealing with bureaucratic betrayal, political cynicism, and personal compromises in a world where loyalty is currency and trust is fatal. His stories emphasize psychological realism over exotic gadgets, focusing on the human cost of espionage during the height of East-West tensions."
+      },
+      "works": [
+        {
+          "title": "Checkmate Berlin",
+          "description": "Veteran CIA operative Martin Webb returns to divided Berlin to investigate the systematic elimination of Western assets behind the Iron Curtain. As bodies pile up on both sides, he discovers the killer is using a chess-based code to select targets. Racing against time through the city's underground tunnels and safe houses, Webb must confront his own past mistakes while playing a deadly game where one wrong move means death for dozens of agents."
+        },
+        {
+          "title": "Ghost Station",
+          "description": "When a long-dormant Soviet sleeper network suddenly activates across Western Europe, intelligence analyst Sarah Coleman is pulled into a web of deceit spanning three decades. Following leads through abandoned Cold War listening posts and forgotten dead drops, she uncovers a conspiracy that reaches into the highest levels of NATO command. But in a world of double agents and shifting allegiances, discovering the truth may cost her everything she believes in."
+        },
+        {
+          "title": "Moscow Rules",
+          "description": "British intelligence officer David Harper operates under deep cover in 1970s Moscow, where paranoia is a survival skill and every conversation could be your last. When his carefully constructed identity begins to unravel, he must navigate the brutal world of KGB surveillance while protecting a network of dissidents planning a major defection. Following the unwritten 'Moscow Rules' of espionage, Harper discovers that in the Soviet capital, even the shadows have eyes."
+        },
+        {
+          "title": "Operation Nightfall",
+          "description": "CIA case officer Janet Reeves runs illegal surveillance operations across Europe using forged diplomatic passports and black budget funding. When her latest mission in Prague goes sideways, she becomes a target of both enemy intelligence services and her own agency's cleanup crews. Moving through a landscape of shifting borders and uncertain loyalties, she must stay ahead of assassins while uncovering who burned her network and why."
+        },
+        {
+          "title": "The Cipher Code",
+          "description": "NSA cryptanalyst Robert Chen discovers that Soviet communications contain a hidden layer of encryption that suggests a massive intelligence breach within American operations. As he works to crack the seemingly unbreakable code, he realizes the leak goes back decades and involves agents he thought were dead. Racing against bureaucrats who want to bury the truth, Chen must decode not just Soviet secrets, but the web of betrayal that threatens to destroy Western intelligence operations."
+        },
+        {
+          "title": "The Minsk Conspiracy",
+          "description": "When a high-ranking KGB defector claims that a cabal of Western intelligence officials has been feeding information to Moscow for over a decade, veteran debriefer Thomas Kane must separate truth from elaborate disinformation. Following a trail of doctored photographs and forged documents across multiple agencies, Kane discovers that the conspiracy involves people he's trusted for years. In the paranoid world of counterintelligence, proving innocence is more dangerous than assuming guilt."
+        },
+        {
+          "title": "The Prague Deception",
+          "description": "During the aftermath of the Prague Spring, MI6 operative Michael Preston runs extraction operations for Czech dissidents while dodging both Soviet surveillance and his own service's political calculations. When a routine extraction turns into a bloodbath, Preston realizes he's been manipulated as part of a larger game involving arms deals and political blackmail. Hunted through the narrow streets of occupied Prague, he must determine who he can trust when every ally may be an enemy."
+        },
+        {
+          "title": "The Vienna Gambit",
+          "description": "In neutral Vienna, where spies from every major power operate under diplomatic cover, CIA station chief Katherine Wells discovers that someone is systematically eliminating intelligence officers from all sides. As the death toll rises, she realizes the killer is following a pattern based on Cold War chess matches between American and Soviet grandmasters. Wells must decode the deadly game while avoiding becoming the next victim in a conspiracy that threatens to destabilize the delicate balance of Cold War Vienna."
+        },
+        {
+          "title": "The Zurich Intercept",
+          "description": "Former CIA operative Jack Morrison, now working freelance intelligence in Switzerland, stumbles onto a money-laundering operation that funds terrorist activities across Europe. Pursued by assassins through the sterile world of Swiss banking, Morrison discovers the operation involves intelligence services from multiple countries using terrorism as a cover for political manipulation. With nowhere to turn and no one to trust, he must expose the conspiracy while staying one step ahead of professional killers."
+        },
+        {
+          "title": "Winter Protocol",
+          "description": "During a brutal Northern European winter, NATO intelligence officer Colonel Frank Brennan investigates suspicious Soviet military movements near the Finnish border. When his surveillance teams start disappearing, he discovers that 'Winter Protocol' - a secret contingency plan developed during the early Cold War - has been activated by unknown parties. Racing against time through frozen landscapes and abandoned installations, Brennan must prevent a false-flag operation designed to trigger a NATO response that could start World War III."
+        }
+      ]
     }
   ]
 }
