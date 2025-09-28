@@ -4,9 +4,10 @@ import { getGenreColor, getSubGenreColor, getImprintColor } from '../utils/tagCo
 
 export interface Props {
   book: any;
+  index?: number;
 }
 
-const { book } = Astro.props;
+const { book, index = 0 } = Astro.props;
 const author = getAuthorById(book.author_id);
 const genre = getGenreByCode(book.genre_code);
 const subGenre = getSubGenreByCode(book.genre_code, book.sub_genre_code);
@@ -18,6 +19,9 @@ const subGenre = getSubGenreByCode(book.genre_code, book.sub_genre_code);
       <img
         src={book.cover_image}
         alt={`Cover of ${book.title}`}
+        loading={index < 6 ? "eager" : "lazy"}
+        decoding="async"
+        fetchpriority={index < 3 ? "high" : "auto"}
         onerror="this.src='/northpointpublishing/images/covers/cover_placeholder.jpg'"
       />
     </div>
@@ -28,6 +32,8 @@ const subGenre = getSubGenreByCode(book.genre_code, book.sub_genre_code);
           src={author?.image || "/northpointpublishing/images/authors/author_placeholder.jpg"}
           alt={author?.name}
           class="author-image"
+          loading="lazy"
+          decoding="async"
           onerror="this.src='/northpointpublishing/images/authors/author_placeholder.jpg'"
         />
         <p class="book-author">by {author?.name}</p>
@@ -56,15 +62,18 @@ const subGenre = getSubGenreByCode(book.genre_code, book.sub_genre_code);
 <style>
   .book-card {
     background: #ffffff;
-    border-radius: 4px;
+    border-radius: 8px;
     overflow: hidden;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    border: 1px solid #cccccc;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    height: 100%;
   }
 
   .book-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    border-color: #d0d0d0;
   }
 
   .book-link {
@@ -72,42 +81,50 @@ const subGenre = getSubGenreByCode(book.genre_code, book.sub_genre_code);
     color: inherit;
     display: flex;
     align-items: stretch;
-    min-height: 220px;
+    min-height: 280px;
+    height: 100%;
   }
 
   .book-cover {
-    width: 140px;
+    width: 160px;
     flex-shrink: 0;
-    background-color: #f0f0f0;
+    background-color: #f8f8f8;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    border-right: 1px solid #cccccc;
+    border-right: 1px solid #e0e0e0;
   }
 
   .book-cover img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.2s ease;
+  }
+
+  .book-card:hover .book-cover img {
+    transform: scale(1.05);
   }
 
   .book-info {
-    padding: 1rem;
+    padding: 1.25rem;
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-width: 0;
+    background: linear-gradient(to bottom, #ffffff, #fafafa);
   }
 
   .book-title {
-    margin: 0 0 0.5rem 0;
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: #000000;
+    margin: 0 0 0.75rem 0;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #1a1a1a;
     line-height: 1.3;
     font-family: 'Times New Roman', serif;
+    letter-spacing: -0.02em;
   }
 
   .author-section {
@@ -119,19 +136,25 @@ const subGenre = getSubGenreByCode(book.genre_code, book.sub_genre_code);
   }
 
   .author-image {
-    width: 48px;
-    height: 48px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     object-fit: cover;
-    border: 1px solid #cccccc;
+    border: 2px solid #e0e0e0;
+    transition: border-color 0.2s ease;
+  }
+
+  .book-card:hover .author-image {
+    border-color: #c0c0c0;
   }
 
   .book-author {
     margin: 0;
-    color: #666666;
+    color: #555555;
     font-style: italic;
     font-size: 0.85rem;
     text-align: center;
+    font-weight: 400;
   }
 
   .genre-tags {
@@ -154,23 +177,27 @@ const subGenre = getSubGenreByCode(book.genre_code, book.sub_genre_code);
 
   .genre-badge, .subgenre-badge, .imprint-badge {
     color: #ffffff;
-    padding: 0.2rem 0.4rem;
-    border-radius: 3px;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
     font-size: 0.7rem;
-    font-weight: bold;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     /* Background color set via inline style for dynamic colors */
   }
 
   .price {
-    color: #000000;
-    font-weight: bold;
-    font-size: 0.9rem;
+    color: #1a1a1a;
+    font-weight: 700;
+    font-size: 1rem;
   }
 
   .publication-year {
     margin: 0;
-    color: #666666;
+    color: #777777;
     font-size: 0.8rem;
+    font-weight: 500;
   }
 
   @media (max-width: 768px) {

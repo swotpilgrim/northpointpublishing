@@ -12,64 +12,64 @@ function hashCode(str) {
   return hash;
 }
 
-// Generate HSL color from hash with good contrast and saturation
+// Generate sophisticated HSL colors that match our professional palette
 function generateColorFromHash(text, type = 'genre') {
   const hash = hashCode(text);
 
-  // Different hue ranges for different tag types to create visual grouping
+  // Sophisticated hue ranges for different tag types
   let hueBase;
   switch (type) {
     case 'genre':
-      hueBase = 0; // Red to orange range
+      hueBase = 220; // Blue to purple range - professional
       break;
     case 'subgenre':
-      hueBase = 200; // Blue to purple range
+      hueBase = 40; // Orange to yellow range - warm accent
       break;
     case 'imprint':
-      hueBase = 100; // Green to yellow range
+      hueBase = 160; // Green to teal range - fresh and modern
       break;
     default:
-      hueBase = 0;
+      hueBase = 220;
   }
 
-  // Generate hue within a 60-degree range for the tag type
-  const hue = (hueBase + (Math.abs(hash) % 60)) % 360;
-  const saturation = 65 + (Math.abs(hash) % 25); // 65-90% saturation
-  const lightness = 35 + (Math.abs(hash) % 15); // 35-50% lightness (darker for white text)
+  // Generate hue within a 40-degree range for subtlety
+  const hue = (hueBase + (Math.abs(hash) % 40)) % 360;
+  const saturation = 45 + (Math.abs(hash) % 20); // 45-65% saturation (more muted)
+  const lightness = 40 + (Math.abs(hash) % 15); // 40-55% lightness (professional darkness)
 
   return `hsl(${hue}, ${saturation}%, ${lightness}%)`;
 }
 
-// Pre-defined color mappings with highly distinct, contrasting colors
-// Each color is chosen to be maximally different from all others
+// Sophisticated, muted color palette for professional appearance
+// Colors are distinctive but harmonious and easy on the eyes
 export const GENRE_COLORS = {
-  'Action': '#ff0000',           // Pure red - high energy
-  'Horror': '#4b0082',           // Indigo - dark and mysterious
-  'Science Fiction': '#00bfff',  // Deep sky blue - futuristic
-  'Romance': '#ff69b4',          // Hot pink - romantic
-  'Spy': '#2f4f2f'              // Dark slate gray - secretive
+  'Action': '#c53030',           // Muted red - confident energy
+  'Horror': '#553c9a',           // Deep purple - mysterious elegance
+  'Science Fiction': '#2b6cb0',  // Professional blue - technological
+  'Romance': '#b83280',          // Muted rose - sophisticated romance
+  'Spy': '#4a5568'              // Slate gray - understated authority
 };
 
 export const SUBGENRE_COLORS = {
-  '1970s Grindhouse Style': '#ff4500',      // Orange red - retro energy
-  '1950s B-Movie Horror': '#800080',        // Purple - classic horror
-  'Gothic Vampires': '#8b0000',             // Dark red - blood/gothic
-  'Contemporary Horror': '#556b2f',         // Dark olive green - modern edge
-  '1960s Retro-Futuristic': '#00ced1',     // Dark turquoise - space age
-  '1950s Teen Romance': '#dc143c',          // Crimson - passionate
-  'YA Supernatural Teen Drama': '#9370db',  // Medium purple - mystical
-  '60s Style Action Adventure': '#b8860b'   // Dark golden rod - adventure
+  'Grindhouse': '#d69e2e',          // Warm amber - vintage appeal
+  'B-Movie': '#e63946',             // Classic red - retro cinema
+  'Gothic': '#702459',              // Deep burgundy - gothic elegance
+  'Modern': '#f56565',              // Coral red - contemporary edge
+  'Retro-Future': '#319795',        // Teal - space age sophistication
+  'Teen Romance': '#e53e3e',        // Soft coral - youthful romance
+  'Supernatural': '#6b46c1',        // Mystical purple - otherworldly
+  'Spy Thriller': '#2c5282'         // Steel blue - covert operations
 };
 
 export const IMPRINT_COLORS = {
-  'Redline': '#ff1493',          // Deep pink - vibrant energy
-  'Atomic Screen': '#00ff7f',    // Spring green - atomic glow
-  'Night Chapel': '#191970',     // Midnight blue - gothic night
-  'Lido Noir': '#000000',        // Pure black - noir darkness
-  'StarLark': '#ffd700',         // Gold - stellar brightness
-  'Blue Ribbon': '#4169e1',      // Royal blue - premium quality
-  'Moon & Locker': '#da70d6',    // Orchid - magical/mystical
-  'Shadow Bureau': '#696969'     // Dim gray - shadowy operations
+  'Redline': '#e53e3e',          // Refined coral - dynamic energy
+  'Atomic Screen': '#48bb78',    // Professional green - scientific precision
+  'Night Chapel': '#2d3748',     // Dark charcoal - gothic sophistication
+  'Lido Noir': '#1a365d',        // Midnight blue - noir mystery
+  'StarLark': '#ed8936',         // Warm gold - stellar warmth
+  'Blue Ribbon': '#3182ce',      // Classic blue - trusted quality
+  'Moon & Locker': '#9f7aea',    // Soft lavender - mystical allure
+  'Shadow Bureau': '#4c1d95'     // Deep indigo - shadowy operations
 };
 
 // Main function to get color for any tag

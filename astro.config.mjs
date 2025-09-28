@@ -8,5 +8,15 @@ export default defineConfig({
   output: 'static',
   build: {
     assets: 'assets'
+  },
+  vite: {
+    build: {
+      assetsInlineLimit: 0, // Don't inline assets, keep them as separate files for better caching
+    },
+    server: {
+      headers: {
+        'Cache-Control': 'public, max-age=31536000', // Cache static assets for 1 year
+      }
+    }
   }
 });

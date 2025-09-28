@@ -10,21 +10,21 @@
       "code": "H",
       "sub_genres": [
         {
-          "name": "1950s B-Movie Horror",
+          "name": "B-Movie",
           "code": "H-1",
           "imprint": "Atomic Screen",
           "imprint_code": "AS",
           "spine_code": "NP-AS"
         },
         {
-          "name": "Gothic Vampires",
+          "name": "Gothic",
           "code": "H-2",
           "imprint": "Night Chapel",
           "imprint_code": "NC",
           "spine_code": "NP-NC"
         },
         {
-          "name": "Contemporary Horror",
+          "name": "Modern",
           "code": "H-3",
           "imprint": "Lido Noir",
           "imprint_code": "LN",
@@ -37,7 +37,7 @@
       "code": "SF",
       "sub_genres": [
         {
-          "name": "1960s Retro-Futuristic",
+          "name": "Retro-Future",
           "code": "SF-1",
           "imprint": "StarLark",
           "imprint_code": "SL",
@@ -50,7 +50,7 @@
       "code": "A",
       "sub_genres": [
         {
-          "name": "1970s Grindhouse Style",
+          "name": "Grindhouse",
           "code": "A-1",
           "imprint": "Redline",
           "imprint_code": "RL",
@@ -63,14 +63,14 @@
       "code": "R",
       "sub_genres": [
         {
-          "name": "1950s Teen Romance",
+          "name": "Teen Romance",
           "code": "R-1",
           "imprint": "Blue Ribbon",
           "imprint_code": "BR",
           "spine_code": "NP-BR"
         },
         {
-          "name": "YA Supernatural Teen Drama",
+          "name": "Supernatural",
           "code": "R-2",
           "imprint": "Moon & Locker",
           "imprint_code": "ML",

@@ -6,26 +6,29 @@ const books = getAllBooks();
 ---
 
 <div class="book-grid">
-  {books.map(book => (
-    <BookCard book={book} />
+  {books.map((book, index) => (
+    <BookCard book={book} index={index} />
   ))}
 </div>
 
 <style>
   .book-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     padding: 1rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
-  @media (max-width: 1400px) {
+  @media (max-width: 1200px) {
     .book-grid {
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem;
     }
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: 768px) {
     .book-grid {
       grid-template-columns: 1fr;
       gap: 1rem;

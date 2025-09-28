@@ -3,9 +3,19 @@ import Layout from '../layouts/Layout.astro';
 import SearchBar from '../components/SearchBar.astro';
 import FilterPanel from '../components/FilterPanel.astro';
 import BookGrid from '../components/BookGrid.astro';
+import { getAllBooks } from '../utils/dataHelpers.js';
+
+// Get first 6 books for preloading critical images
+const allBooks = getAllBooks();
+const criticalBooks = allBooks.slice(0, 6);
 ---
 
 <Layout title="North Point Publishing - Catalog" description="Browse our collection of classic genre fiction from the golden age of pulp publishing">
+	<!-- Preload critical images for faster loading -->
+	{criticalBooks.map(book => (
+		<link slot="head" rel="preload" as="image" href={book.cover_image} />
+	))}
+
 	<div class="container">
 		<div class="intro">
 			<h1>Catalog Directory</h1>

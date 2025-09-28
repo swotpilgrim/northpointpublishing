@@ -16,6 +16,7 @@ const { title, description = "North Point Publishing - Intelligent Genre Fiction
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<slot name="head" />
 	</head>
 	<body>
 		<header class="header">
@@ -39,6 +40,21 @@ const { title, description = "North Point Publishing - Intelligent Genre Fiction
 				<p>&copy; 1975-2024 North Point Publishing. Preserving classic genre fiction traditions.</p>
 			</div>
 		</footer>
+
+		<script>
+			// Register service worker for better caching
+			if ('serviceWorker' in navigator) {
+				window.addEventListener('load', () => {
+					navigator.serviceWorker.register('/northpointpublishing/sw.js')
+						.then((registration) => {
+							console.log('SW registered: ', registration);
+						})
+						.catch((registrationError) => {
+							console.log('SW registration failed: ', registrationError);
+						});
+				});
+			}
+		</script>
 	</body>
 </html>
 

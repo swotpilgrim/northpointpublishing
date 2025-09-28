@@ -52,6 +52,7 @@ const imprints = getAllImprints();
     <div class="filter-group">
       <label for="sort-select">Sort by:</label>
       <select id="sort-select" class="filter-select">
+        <option value="genre">Genre A-Z</option>
         <option value="title">Title A-Z</option>
         <option value="author">Author</option>
         <option value="year">Publication Year</option>
@@ -141,7 +142,11 @@ const imprints = getAllImprints();
     );
 
     visibleBooks.sort((a, b) => {
-      if (sortBy === 'title') {
+      if (sortBy === 'genre') {
+        const genreA = a.querySelector('.genre-badge')?.textContent || '';
+        const genreB = b.querySelector('.genre-badge')?.textContent || '';
+        return genreA.localeCompare(genreB);
+      } else if (sortBy === 'title') {
         const titleA = a.querySelector('.book-title')?.textContent || '';
         const titleB = b.querySelector('.book-title')?.textContent || '';
         return titleA.localeCompare(titleB);
@@ -180,13 +185,13 @@ const imprints = getAllImprints();
     subGenreFilter.value = '';
     authorFilter.value = '';
     imprintFilter.value = '';
-    sortSelect.value = 'title';
-    
+    sortSelect.value = 'genre';
+
     const books = document.querySelectorAll('.book-card');
     books.forEach(book => {
       (book as HTMLElement).style.display = 'block';
     });
-    
+
     updateResultsCount();
     applySorting();
   }
@@ -200,7 +205,9 @@ const imprints = getAllImprints();
 
   // Initial setup
   document.addEventListener('DOMContentLoaded', () => {
+    sortSelect.value = 'genre';
     updateResultsCount();
+    applySorting();
   });
 </script>
 
