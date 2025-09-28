@@ -33,9 +33,17 @@ const subGenre = getSubGenreByCode(book.genre_code, book.sub_genre_code);
         <p class="book-author">by {author?.name}</p>
       </div>
       <div class="genre-tags">
-        <span class="genre-badge" style={`background-color: ${getGenreColor(genre?.name)}`}>{genre?.name}</span>
-        <span class="subgenre-badge" style={`background-color: ${getSubGenreColor(subGenre?.name)}`}>{subGenre?.name}</span>
-        {book.imprint && <span class="imprint-badge" style={`background-color: ${getImprintColor(book.imprint)}`}>{book.imprint}</span>}
+        <div class="tag-row">
+          <span class="genre-badge" style={`background-color: ${getGenreColor(genre?.name)}`}>{genre?.name}</span>
+        </div>
+        <div class="tag-row">
+          <span class="subgenre-badge" style={`background-color: ${getSubGenreColor(subGenre?.name)}`}>{subGenre?.name}</span>
+        </div>
+        {book.imprint && (
+          <div class="tag-row">
+            <span class="imprint-badge" style={`background-color: ${getImprintColor(book.imprint)}`}>{book.imprint}</span>
+          </div>
+        )}
       </div>
       <div class="book-meta">
         <span class="price">{book.price}</span>
@@ -64,11 +72,11 @@ const subGenre = getSubGenreByCode(book.genre_code, book.sub_genre_code);
     color: inherit;
     display: flex;
     align-items: stretch;
-    min-height: 180px;
+    min-height: 220px;
   }
 
   .book-cover {
-    width: 120px;
+    width: 140px;
     flex-shrink: 0;
     background-color: #f0f0f0;
     display: flex;
@@ -85,7 +93,7 @@ const subGenre = getSubGenreByCode(book.genre_code, book.sub_genre_code);
   }
 
   .book-info {
-    padding: 0.75rem;
+    padding: 1rem;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -94,29 +102,25 @@ const subGenre = getSubGenreByCode(book.genre_code, book.sub_genre_code);
   }
 
   .book-title {
-    margin: 0 0 0.4rem 0;
-    font-size: 1rem;
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
     font-weight: bold;
     color: #000000;
-    line-height: 1.2;
+    line-height: 1.3;
     font-family: 'Times New Roman', serif;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
   }
 
   .author-section {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 0.4rem;
-    margin-bottom: 0.5rem;
+    gap: 0.3rem;
+    margin-bottom: 0.75rem;
   }
 
   .author-image {
-    width: 36px;
-    height: 36px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
     object-fit: cover;
     border: 1px solid #cccccc;
@@ -127,16 +131,19 @@ const subGenre = getSubGenreByCode(book.genre_code, book.sub_genre_code);
     color: #666666;
     font-style: italic;
     font-size: 0.85rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    text-align: center;
   }
 
   .genre-tags {
     display: flex;
+    flex-direction: column;
     gap: 0.3rem;
-    margin-bottom: 0.5rem;
-    flex-wrap: wrap;
+    margin-bottom: 0.75rem;
+  }
+
+  .tag-row {
+    display: flex;
+    justify-content: center;
   }
 
   .book-meta {
