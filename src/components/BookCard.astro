@@ -52,6 +52,7 @@ const subGenre = getSubGenreByCode(book.genre_code, book.sub_genre_code);
     overflow: hidden;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     border: 1px solid #cccccc;
+    height: 180px;
   }
 
   .book-card:hover {
@@ -64,11 +65,11 @@ const subGenre = getSubGenreByCode(book.genre_code, book.sub_genre_code);
     color: inherit;
     display: flex;
     align-items: stretch;
-    min-height: 200px;
+    height: 100%;
   }
 
   .book-cover {
-    width: 150px;
+    width: 120px;
     flex-shrink: 0;
     background-color: #f0f0f0;
     display: flex;
@@ -85,32 +86,38 @@ const subGenre = getSubGenreByCode(book.genre_code, book.sub_genre_code);
   }
 
   .book-info {
-    padding: 1rem;
+    padding: 0.75rem;
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    min-width: 0;
   }
 
   .book-title {
-    margin: 0 0 0.5rem 0;
-    font-size: 1.1rem;
+    margin: 0 0 0.25rem 0;
+    font-size: 0.95rem;
     font-weight: bold;
     color: #000000;
-    line-height: 1.3;
+    line-height: 1.2;
     font-family: 'Times New Roman', serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
   }
 
   .author-section {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 0.75rem;
+    gap: 0.3rem;
+    margin-bottom: 0.5rem;
   }
 
   .author-image {
-    width: 48px;
-    height: 48px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     object-fit: cover;
     border: 1px solid #cccccc;
@@ -120,13 +127,16 @@ const subGenre = getSubGenreByCode(book.genre_code, book.sub_genre_code);
     margin: 0;
     color: #666666;
     font-style: italic;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .genre-tags {
     display: flex;
-    gap: 0.5rem;
-    margin-bottom: 0.75rem;
+    gap: 0.25rem;
+    margin-bottom: 0.5rem;
     flex-wrap: wrap;
   }
 
@@ -134,28 +144,28 @@ const subGenre = getSubGenreByCode(book.genre_code, book.sub_genre_code);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: auto;
   }
 
   .genre-badge, .subgenre-badge, .imprint-badge {
     color: #ffffff;
-    padding: 0.25rem 0.5rem;
-    border-radius: 4px;
-    font-size: 0.75rem;
+    padding: 0.15rem 0.3rem;
+    border-radius: 3px;
+    font-size: 0.65rem;
     font-weight: bold;
     /* Background color set via inline style for dynamic colors */
   }
 
-
   .price {
     color: #000000;
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .publication-year {
     margin: 0;
     color: #666666;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
   @media (max-width: 768px) {
