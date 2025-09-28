@@ -1,79 +1,21 @@
 ---
 import BookCard from './BookCard.astro';
-import { getBooksGroupedByAuthor } from '../utils/dataHelpers.js';
+import { getAllBooks } from '../utils/dataHelpers.js';
 
-const authorGroups = getBooksGroupedByAuthor();
+const books = getAllBooks();
 ---
 
 <div class="book-grid">
-  {authorGroups.map(({ author, books }) => (
-    <div class="author-section">
-      <h2 class="author-name">{author.name}</h2>
-      <div class="author-books">
-        {books.map(book => (
-          <BookCard book={book} />
-        ))}
-      </div>
-    </div>
+  {books.map(book => (
+    <BookCard book={book} />
   ))}
 </div>
 
 <style>
   .book-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
     padding: 1rem 0;
-  }
-
-  .author-section {
-    margin-bottom: 2rem;
-  }
-
-  .author-name {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #000000;
-    margin: 0 0 1rem 0;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid #000000;
-    font-family: 'Times New Roman', serif;
-  }
-
-  .author-books {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1rem;
-  }
-
-  @media (min-width: 1400px) {
-    .author-books {
-      grid-template-columns: repeat(5, 1fr);
-    }
-  }
-
-  @media (min-width: 1200px) and (max-width: 1399px) {
-    .author-books {
-      grid-template-columns: repeat(4, 1fr);
-    }
-  }
-
-  @media (min-width: 900px) and (max-width: 1199px) {
-    .author-books {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-
-  @media (min-width: 600px) and (max-width: 899px) {
-    .author-books {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-  @media (max-width: 599px) {
-    .author-books {
-      grid-template-columns: 1fr;
-    }
-
-    .author-name {
-      font-size: 1.3rem;
-    }
   }
 </style>

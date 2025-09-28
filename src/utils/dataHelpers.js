@@ -91,27 +91,3 @@ export function getAllImprints() {
 
   return imprints.sort((a, b) => a.name.localeCompare(b.name));
 }
-
-export function getBooksGroupedByAuthor() {
-  const authorGroups = [];
-  const authorMap = new Map();
-
-  // Group books by author
-  catalogData.books.forEach(book => {
-    if (!authorMap.has(book.author_id)) {
-      const author = getAuthorById(book.author_id);
-      authorMap.set(book.author_id, {
-        author: author,
-        books: []
-      });
-    }
-    authorMap.get(book.author_id).books.push(book);
-  });
-
-  // Convert to array and sort by author name
-  authorMap.forEach(group => {
-    authorGroups.push(group);
-  });
-
-  return authorGroups.sort((a, b) => a.author.name.localeCompare(b.author.name));
-}
